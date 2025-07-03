@@ -1,0 +1,24 @@
+
+name: Kubernetes-Deploy
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Setup kubectl
+        uses: azure/setup-kubectl@v3
+        with:
+          version: 'latest'
+      - name: Configure Kubernetes context
+        run: |
+          echo "${ secrets.KUBE_CONFIG }" > kubeconfig
+          export KUBECONFIG=kubeconfig
+      - name: Deploy to Kubernetes
+        run: |
+          kubectl apply -f k8s/
+    

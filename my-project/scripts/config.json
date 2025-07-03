@@ -1,0 +1,10 @@
+{
+  "DME_API": "",
+  "DME_SECRET": "",
+  "DOMAIN": "",
+  "SUBDOMAIN": "", 
+  "WILDCARD": "",
+  "GITHUB_ACCESS_TOKEN": "",
+  "GITHUB_REPOSITORY": "devang-k/k8s",
+  "ABSPATH_TO_PROJECT": "/mnt/d/k8s-cluster_scripts"
+}
