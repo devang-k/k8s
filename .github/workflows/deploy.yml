@@ -13,6 +13,9 @@ jobs:
         uses: azure/setup-kubectl@v3
         with:
           version: 'latest'
+      - name: Verify API Server Access
+        run: |
+          kubectl cluster-info
       - name: Configure Kubernetes context
         env:
           KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG }}
