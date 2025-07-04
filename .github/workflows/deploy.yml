@@ -13,19 +13,15 @@ jobs:
         uses: azure/setup-kubectl@v3
         with:
           version: 'latest'
-      - name: Cat Kubeconfig
-        run: |
-          cat ${{ secrets.KUBE_CONFIG }}
-      - name: Verify API Server Access
-        run: |
-          kubectl cluster-info
       - name: Configure Kubernetes context
         env:
           KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG }}
         run: |
           echo "$KUBE_CONFIG_DATA" > kubeconfig
           export KUBECONFIG=kubeconfig
+      - name: Verify API Server Access
+        run: |
+          kubectl cluster-info
       - name: Deploy to Kubernetes
         run: |
           kubectl apply -f k8s/
-#test
