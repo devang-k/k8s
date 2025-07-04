@@ -14,8 +14,10 @@ jobs:
         with:
           version: 'latest'
       - name: Configure Kubernetes context
+        env:
+          KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG }}
         run: |
-          echo "${{ secrets.KUBE_CONFIG }}" > kubeconfig
+          echo "$KUBE_CONFIG_DATA" > kubeconfig
           export KUBECONFIG=kubeconfig
       - name: Deploy to Kubernetes
         run: |
