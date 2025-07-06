@@ -43,9 +43,10 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.GHCR_PAT }} # Ensure this PAT has `write:packages` scope
+          password: ${{ secrets.GHCR_PAT }}
 
       - name: Build and Push Docker Image to GHCR
         run: |
-          docker build . -t ghcr.io/${{ github.repository }}/sivista_frontend_sprint4:${{ steps.extract_version.outputs.version }}
+          docker build . --label org.opencontainers.image.source=https://github.com/devang-k/k8s \
+           -t ghcr.io/${{ github.repository }}/sivista_frontend_sprint4:${{ steps.extract_version.outputs.version }}
           docker push ghcr.io/${{ github.repository }}/sivista_frontend_sprint4:${{ steps.extract_version.outputs.version }}
