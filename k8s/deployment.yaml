@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sivista-frontend
+  namespace: default
+  labels:
+    app: sivista-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sivista-frontend
+  template:
+    metadata:
+      labels:
+        app: sivista-frontend
+    spec:
+      containers:
+        - name: sivista-frontend
+          image: ghcr.io/devang-k/k8s/sivista_frontend_sprint4:1.0.0.1
+          ports:
+            - containerPort: 3000
+          envFrom:
+            - configMapRef:
+                name: sivista-frontend-config
+          resources:
+            limits:
+              cpu: "500m"
+              memory: "512Mi"
+            requests:
+              cpu: "200m"
+              memory: "256Mi"

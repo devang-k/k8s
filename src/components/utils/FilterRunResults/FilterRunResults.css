@@ -1,0 +1,106 @@
+
+
+.sidenav {
+  position: fixed;
+  /* top: 56px; */
+  right: 0;
+  height: calc(100vh - 76px); /* Full screen height */
+  width: 50vw; /* Adjusts to screen width */
+  max-width: 500px; /* Prevents excessive width */
+  background-color: var(--app-secondary-color);
+  box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* Header Section (Fixed, No Scroll) */
+.sidenav .header {
+  padding: 10px 15px;
+  border-bottom: 1px solid var(--app-tabs-border-color);
+  flex-shrink: 0; /* Prevents shrinking */
+}
+
+/* Cells Section (Fixed, No Scroll) */
+.sidenav .cells-section {
+  padding: 10px 15px;
+  border-bottom: 1px solid var(--app-tabs-border-color);
+  flex-shrink: 0;
+  overflow-y: auto;
+  /* height: 30vh; */
+}
+
+ .scrollable-section {
+  max-height: 20vh; /* Adjust as needed */
+  overflow-y: auto;
+  /* height:25px; */
+  border: 1px solid var(--app-tabs-border-color);
+  padding: 10px;
+}
+
+/* Scrollable Tech Parameters Section */
+.sidenav .tech-parameters-container {
+  flex-grow: 1; /* Takes up remaining space */
+  overflow-y: auto; /* Only this section scrolls */
+  padding: 15px;
+}
+
+/* Buttons Section (Fixed at Bottom) */
+.sidenav .button-container {
+  padding: 4px;
+  border-top: 1px solid var(--app-secondary-color);
+  background: var(--app-secondary-color);
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0; /* Prevents shrinking */
+}
+
+.form-check .form-check-input{
+  pointer-events: auto !important;
+  cursor: pointer;
+}
+.form-option-select-custom:hover {
+  pointer-events: auto !important;
+  cursor: pointer !important; /* Ensures pointer cursor on hover */
+}
+
+.form-option-select-custom {
+  /* background-color: var(--app-primary-color); */
+  border: none;
+  /* color: white; */
+  pointer-events: auto !important;
+  cursor: pointer !important; /* Cursor applied to the select box */
+}
+
+/* Change selected option background */
+.form-select-custom:focus {
+  border-color: var(--app-primary-color);
+  box-shadow: 0 0 5px var(--app-primary-color);
+}
+
+.form-select-custom option:checked {
+  background-color: var(--app-primary-color) !important;
+}
+
+.form-select:disabled{
+  pointer-events: auto !important;
+  cursor: not-allowed;
+}
+.form-control:disabled{
+  pointer-events: auto !important;
+  cursor: not-allowed;
+}
+.form-select-option{
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}

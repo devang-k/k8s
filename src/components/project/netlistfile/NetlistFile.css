@@ -1,0 +1,159 @@
+ 
+/***************************************************************************  
+ * Copyright © 2024 SiClarity, Inc.  
+ * All rights reserved.  
+ *  
+ * File Name: NetlistFile.css  
+ * Description: This file is responsible to apply CSS on Netlist page 
+ *  
+ * Author: [Author's Name]  
+ * Created On: [Creation Date]  
+ *  
+ * Revision History:  
+ * - [Date] [Modifier's Name]: [JIRA Id]:[Summary of changes made]  
+ *  
+ * This source code and associated materials are the property of SiClarity, Inc.  
+ * Unauthorized copying, modification, distribution, or use of this software,  
+ * in whole or in part, is strictly prohibited without prior written permission  
+ * from SiClarity, Inc.  
+ *  
+ * Disclaimer:  
+ * This software is provided "as is," without any express or implied warranties,  
+ * including but not limited to warranties of merchantability, fitness for a  
+ * particular purpose, or non-infringement. In no event shall SiClarity, Inc.  
+ * be held liable for any damages arising from the use of this software.  
+ *  
+ * SiClarity and its logo are trademarks of SiClarity, Inc.  
+ *  
+ * For inquiries, contact: support@siclarity.com  
+ ***************************************************************************/
+
+.modal-style .modal-content {
+  min-height: 550px;
+  max-height: 550px;
+}
+
+.cursor_not_allowed {
+  pointer-events: auto !important;
+  cursor: not-allowed;
+}
+
+#netlist-selected-filename {
+  font-size: 14px;
+}
+
+.project-name {
+  display: flex;
+  align-items: center;
+  margin: 0px 10px;
+}
+
+.netlist-data {
+  margin: 0px 4px;
+  background-color: white;
+  padding: 3px;
+  width: 100%;
+  border-radius: 5px;
+  /* overflow-y: auto;  */
+}
+/* style={{ overflowY: "auto", height: "100%" }} */
+.netlist-cell-class {
+  overflow-y: auto;
+}
+.netlist-data pre {
+  color: black;
+}
+
+.table-container {
+  max-height: 350px;
+  overflow-y: scroll;
+  margin-bottom: 20px;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container th,
+.table-container td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.table-container tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.table-container .selected {
+  background-color: #c1e1c1;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: grey;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Netlist Sidebar UI */
+
+.netlist-sidebar {
+  background-color: #fff;
+  height: 100%;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.netlist-content {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.netlist-cell-class {
+  margin-left: 4px;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: auto;
+  padding: 0;
+  white-space: nowrap;
+  min-width: min-content;
+}
+
+.netlist-header {
+  z-index: 1;
+}
+
+.search-input {
+  padding: 0.375rem 1.75rem;
+}
+
+.clear-search-icon,
+.search-icon {
+  cursor: pointer;
+}
+
+.netlist-cell-item {
+  cursor: pointer;
+}
+
+.netlist-cell-label {
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: visible;
+  display: inline-block;
+}

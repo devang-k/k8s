@@ -1,0 +1,290 @@
+/***************************************************************************  
+ * Copyright © 2024 SiClarity, Inc.  
+ * All rights reserved.  
+ *  
+ * File Name: App.css  
+ * Description: This file contains the global CSS styles for the main applicatio
+ *  
+ * Author: [Author's Name]  
+ * Created On: [Creation Date]  
+ *  
+ * Revision History:  
+ * - [Date] [Modifier's Name]: [JIRA Id]:[Summary of changes made]  
+ *  
+ * This source code and associated materials are the property of SiClarity, Inc.  
+ * Unauthorized copying, modification, distribution, or use of this software,  
+ * in whole or in part, is strictly prohibited without prior written permission  
+ * from SiClarity, Inc.  
+ *  
+ * Disclaimer:  
+ * This software is provided "as is," without any express or implied warranties,  
+ * including but not limited to warranties of merchantability, fitness for a  
+ * particular purpose, or non-infringement. In no event shall SiClarity, Inc.  
+ * be held liable for any damages arising from the use of this software.  
+ *  
+ * SiClarity and its logo are trademarks of SiClarity, Inc.  
+ *  
+ * For inquiries, contact: support@siclarity.com  
+ ***************************************************************************/
+
+ @import "react-toastify/dist/ReactToastify.css";
+
+ :root {
+   --app-primary-color: #1b5376;
+   --app-secondary-color: #dddddd;
+   --app-primary-slider-button-color: #1b5376;
+   --app-primary-button-color: linear-gradient(120deg,rgb(23, 62, 85) 21%,rgb(27, 83, 118) 85%);
+   --app-secondary-button-color : rgb(140, 147, 150) !important;
+   --app-tabs-border-color: #c4c2c2;
+ }
+ 
+ .position-sticky {
+   position: sticky;
+   top: 0;
+ }
+ 
+ .cursor_not_allowed {
+   pointer-events: auto !important;
+   cursor: not-allowed;
+ }
+ .cursor_pointer {
+   pointer-events: auto !important;
+   cursor: pointer !important;
+ }
+ 
+ .app-primary-color {
+   background-color: var(--app-primary-color);
+ }
+ .app-secondary-color {
+   background-color: var(--app-secondary-color);
+ }
+ 
+ .app-primary-button-color {
+   background: linear-gradient(
+     120deg,
+     rgb(23, 62, 85) 21%,
+     rgb(27, 83, 118) 85%
+   );
+ }
+ 
+ .app-secondary-button-color {
+   background-color: rgb(140, 147, 150) !important;
+ }
+ 
+ .app-secondary-button-color:disabled {
+   background: rgb(140, 147, 150);
+ }
+ 
+ .invalid-feedback {
+   color: #b22222 !important;
+ }
+ 
+ .text-dark {
+   color: #333333 !important;
+ }
+ .navbar {
+   height: 56px !important;
+ }
+ .footer {
+   font-size: 12px;
+   height: 20px;
+ }
+ #dashboard-container {
+   border: 0.5px solid transparent;
+   height: calc(100vh - 76px);
+ }
+ .tabs-btn.active {
+   color: var(--app-primary-color) !important;
+ }
+ .tabs-btn {
+   color: #000 !important;
+ }
+ 
+ #background-img {
+   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+     url("../src/Assets/Images/SiClarity_bg.jpg") no-repeat center center fixed;
+   background-size: cover;
+   height: calc(100vh - 76px);
+ }
+ 
+ .carousel {
+   height: 60vh;
+ }
+ 
+ @keyframes modalFadeInFromBottom {
+   0% {
+     opacity: 0;
+     transform: translateY(100px); /* Starts from below the screen */
+   }
+   100% {
+     opacity: 1;
+     transform: translateY(0); /* Ends in the normal position */
+   }
+ }
+ 
+ .modal-fade-in-bottom {
+   animation: modalFadeInFromBottom 0.5s ease-out;
+ }
+ 
+ @keyframes slideInUp {
+     from {
+       transform: translateX(50px);
+       opacity: 0;
+     }
+     to {
+       transform: translateX(0);
+       opacity: 1;
+     }
+   }
+ 
+ .graph-filter-range-slider {
+   width: 100%;
+   transition: all 0.2s ease;
+ }
+ .graph-filter-range-slider:hover {
+   box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.2);
+ }
+ 
+ .graph-filter-range-slider .MuiSlider-thumb {
+   background-color: var(--app-primary-slider-button-color);
+   transition: background-color 0.2s ease;
+ }
+ 
+ .graph-filter-range-slider .MuiSlider-thumb:hover {
+   background-color: var(--app-primary-slider-button-color);
+ }
+ 
+ .graph-filter-range-slider .MuiSlider-track {
+   background-color: var(--app-primary-slider-button-color);
+ }
+ 
+ .graph-filter-range-slider .MuiSlider-rail {
+   background-color: var(--app-primary-slider-button-color);
+   to {
+     transform: translateX(0);
+     opacity: 1;
+   }
+ }
+ 
+ #background-img .col-12:nth-child(1) button,
+ #admin-user-btn {
+   animation-delay: 0.2s;
+ }
+ #background-img .col-12:nth-child(2) button,
+ #admin-netlist-btn {
+   animation-delay: 0.4s;
+ }
+ #background-img .col-12:nth-child(3) button,
+ #admin-techfile-btn {
+   animation-delay: 0.6s;
+ }
+ 
+ /* Shared animation styles */
+ #admin-user-btn,
+ #admin-netlist-btn,
+ #admin-techfile-btn,
+ #create-project-btn,
+ #running-jobs-btn,
+ #view-edit-project-btn {
+   animation: slideInUp 0.8s ease-out forwards; /* Apply animation */
+   opacity: 0; /* Start invisible */
+   font-weight: bold;
+ }
+ 
+ #create-project-btn:hover,
+ #running-jobs-btn:hover,
+ #view-edit-project-btn:hover,
+ #admin-user-btn:hover,
+ #admin-netlist-btn:hover,
+ #admin-techfile-btn:hover {
+   transform: scale(1.025) !important;
+   background-color: var(--app-secondary-color) !important;
+   color: inherit !important;
+   border-color: inherit !important;
+   cursor: default;
+   box-shadow: none !important;
+   text-decoration: none !important;
+ }
+ 
+ #background-img button:hover span,
+ #admin-user-btn:hover h3,
+ #admin-netlist-btn:hover h3,
+ #admin-techfile-btn:hover h3 {
+   transition: 0.2s ease-in-out;
+   color: blue !important;
+ }
+ 
+ .error-text {
+   color: #fc0000;
+   font-size: 16.4px;
+ }
+ 
+ .tabs-border {
+   border: 1px solid #c4c2c2;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+ }
+ 
+ .dropdown-item:active {
+   background-color: initial;
+ }
+ 
+ .nav-tabs {
+   border-bottom: 1px solid #c4c2c2;
+ }
+ 
+ .delete-button-color {
+   background-color: #dc3545 !important;
+ }
+ 
+ .admin-button {
+   color: #1b5376 !important;
+   cursor: pointer !important;
+ }
+ 
+ .create-project-button-disable-border {
+   border: 1px solid grey;
+ }
+ 
+ .create-project-button-border {
+   border: 1px solid var(--app-primary-color);
+ }
+ 
+ .create-project-button-border:hover,
+ .accordion-button:not(.collapsed) {
+   background-color: var(--app-primary-color);
+   color: white;
+ }
+ 
+ .create-project-button-text {
+   color: var(--app-primary-color);
+ }
+ 
+ .create-project-button-border:hover > .create-project-button-text {
+   color: white !important;
+ }
+ 
+ .accordion-button:focus,
+ .form-check-input:focus {
+   box-shadow: none;
+ }
+ 
+ .form-check-input:checked {
+   background-color: var(--app-primary-color);
+   border: none;
+ }
+
+ .form-check-select {
+  background-color: var(--app-primary-color);
+  border: none;
+}
+
+.button-primary-color {
+  color: var(--app-primary-color);
+}
+
+.view-cart-count{
+  bottom: 10px;
+  background-color: var(--app-secondary-button-color);
+  font-size: 10px;
+}

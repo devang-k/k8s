@@ -1,0 +1,121 @@
+ 
+/***************************************************************************  
+ * Copyright © 2024 SiClarity, Inc.  
+ * All rights reserved.  
+ *  
+ * File Name: Home.css  
+ * Description: This file is responsible to apply CSS style to home page. 
+ *  
+ * Author: [Author's Name]  
+ * Created On: [Creation Date]  
+ *  
+ * Revision History:  
+ * - [Date] [Modifier's Name]: [JIRA Id]:[Summary of changes made]  
+ *  
+ * This source code and associated materials are the property of SiClarity, Inc.  
+ * Unauthorized copying, modification, distribution, or use of this software,  
+ * in whole or in part, is strictly prohibited without prior written permission  
+ * from SiClarity, Inc.  
+ *  
+ * Disclaimer:  
+ * This software is provided "as is," without any express or implied warranties,  
+ * including but not limited to warranties of merchantability, fitness for a  
+ * particular purpose, or non-infringement. In no event shall SiClarity, Inc.  
+ * be held liable for any damages arising from the use of this software.  
+ *  
+ * SiClarity and its logo are trademarks of SiClarity, Inc.  
+ *  
+ * For inquiries, contact: support@siclarity.com  
+ ***************************************************************************/
+
+
+.modal-content{
+  padding: 1rem;
+  background-color: #dddddd;
+}
+
+.btn-create-project,
+.btn-running-jobs,
+.btn-view-projects {
+  height: 100%;
+}
+.modal-style{
+  overflow: hidden;
+}
+.modal-style .modal-dialog {
+  height: calc(100% - 50px);
+}
+
+.modal-style .modal-content {
+  height: 100%;
+  background-color: #dddddd;
+}
+.carousel-item img {
+  object-fit: cover;
+  height: 300px;
+}
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+  bottom: 20px;
+}
+.btn-custom {
+  transition: background-color 0.3s, transform 0.3s;
+  border: none;
+}
+.btn-custom:hover {
+  background-color: #007bff;
+  color: white;
+  transform: scale(1.05);
+}
+
+#background-img .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#background-img button {
+  border: none;
+  cursor: pointer;
+  color: white;
+  border-radius: 12px; /* Card-like rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease; 
+}
+
+#background-img button img {
+  max-width: 40px; /* Adjust image size */
+  height: auto;
+  margin-bottom: 10px; /* Spacing between image and text */
+}
+
+#background-img button span {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+/* Animation adjustments */
+#create-project-btn, #running-jobs-btn, #view-edit-project-btn {
+  animation: slideInUp 0.8s ease-out forwards;
+  opacity: 0;
+}
+#create-project-btn:hover, #running-jobs-btn:hover, #view-edit-project-btn:hover{
+  transform: scale(1.5); /* Lift effect on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+} 
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color:#dddddd;
+}
+
+#delete-project-button{
+  background: #dc3545;
+}
+
+#delete-project-button:hover{
+  background: #dc3545;
+}
