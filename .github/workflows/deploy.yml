@@ -48,5 +48,6 @@ jobs:
       - name: Build and Push Docker Image to GHCR
         run: |
           docker build . --label org.opencontainers.image.source=https://github.com/devang-k/k8s \
-           -t ghcr.io/${{ github.repository }}/sivista_frontend_sprint4:${{ steps.extract_version.outputs.version }}
+          --build-arg REACT_APP_API_URL="http://13.126.133.62:6601" \
+          -t ghcr.io/${{ github.repository }}/sivista_frontend_sprint4:${{ steps.extract_version.outputs.version }}
           docker push ghcr.io/${{ github.repository }}/sivista_frontend_sprint4:${{ steps.extract_version.outputs.version }}
