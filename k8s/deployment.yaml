@@ -15,9 +15,11 @@ spec:
       labels:
         app: sivista-frontend
     spec:
+      imagePullSecrets:
+        - name: ghcr-secret
       containers:
         - name: sivista-frontend
-          image: ghcr.io/devang-k/k8s/sivista_frontend_sprint4:1.0.0.1
+          image: ghcr.io/devang-k/k8s/sivista_frontend_sprint4:1.0.0.415
           ports:
             - containerPort: 3000
           envFrom:
