@@ -1,4 +1,4 @@
-name: SiVista_Dev_k8s
+name: SiVista_Dev_k8s_deploy
 
 on:
   push:
