@@ -32,12 +32,7 @@ jobs:
       - name: Log Push Details
         run: |
           echo "Push event to branch: ${{ github.ref_name }}"
-          echo "Commit SHA: ${{ github.sha }}"
-
-      - name: Create .env file dynamically
-        run: |
-          echo "REACT_APP_VERSION=${{ steps.extract_version.outputs.version }}" > .env
- 
+          echo "Commit SHA: ${{ github.sha }}" 
       - name: Log in to GitHub Container Registry
         uses: docker/login-action@v3
         with:
@@ -50,6 +45,5 @@ jobs:
       - name: Build and Push Docker Image to GHCR
         run: |
           docker build . --label org.opencontainers.image.source=https://github.com/devang-k/k8s \
-          --build-arg REACT_APP_API_URL="http://13.126.133.62:6601" \
           -t ghcr.io/${{ github.repository }}/sivista_frontend_sprint4:${{ steps.extract_version.outputs.version }}
           docker push ghcr.io/${{ github.repository }}/sivista_frontend_sprint4:${{ steps.extract_version.outputs.version }}
