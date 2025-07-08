@@ -11,7 +11,6 @@ jobs:
 
     env:
       CI: true
-      REACT_APP_API_URL: http://13.126.133.62:6601
 
     steps:
       - name: Checkout Repository
@@ -42,7 +41,6 @@ jobs:
       - name: Build Docker Image
         run: |
           docker build . \
-          --build-arg REACT_APP_API_URL=${{ env.REACT_APP_API_URL }} \
           --label org.opencontainers.image.source=https://github.com/${{ github.repository }} \
           -t ghcr.io/${{ github.repository }}/sivista_frontend_sprint4:${{ steps.extract_version.outputs.version }}
 
