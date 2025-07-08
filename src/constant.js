@@ -27,8 +27,8 @@
  *  
  * For inquiries, contact: support@siclarity.com  
  ***************************************************************************/
-import env from "react-dotenv";
-export const hostName = env.REACT_APP_API_URL;
+
+export const hostName = process.env.REACT_APP_API_URL;
 export const pageSize = 20;
 export const pageNumber = 0;
 export const adminPageSize = 25;

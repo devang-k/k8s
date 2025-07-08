@@ -27,7 +27,7 @@
  *  
  * For inquiries, contact: support@siclarity.com  
  ***************************************************************************/
-
+require('dotenv').config()
 import "./App.css";
 import MainLayout from "./components/MainLayout/MainLayout";
 import Home from "./components/home/Home";
