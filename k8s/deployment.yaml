@@ -23,19 +23,6 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
-          env:
-            - name: REACT_APP_API_URL
-              value: "http://13.126.133.62:6601"
-            - name: REACT_APP_WEBSOCKET_API_URL
-              value: "ws://13.126.133.62:6601/ws/job"
-            - name: REACT_APP_DEBUG
-              value: "true"
-            - name: GENERATE_SOURCEMAP
-              value: "false"
-            - name: REACT_APP_ENABLE_POC_BUTTON
-              value: "true"
-            - name: REACT_APP_CURRENT_APP_VERSION
-              value: "2"
           resources:
             limits:
               cpu: "500m"

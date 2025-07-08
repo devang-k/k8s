@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION="1.0.0.416"
+VERSION="1.0.0.415"
 
 IMAGE_NAME="siclarity/frontend"
 
