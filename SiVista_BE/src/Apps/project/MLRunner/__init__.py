@@ -1,0 +1,1 @@
+default_app_config = 'src.Apps.project.MLRunner.apps.MlrunnerConfig'

@@ -1,15 +1,12 @@
-node_modules/*
 # Byte-compiled / optimized / DLL files
+*.py[cod]
+__pycache__/
+*.so
 
-_.py[cod]
-**pycache**/
-_.so
 # C extensions
-
-\*.so
+*.so
 
 # Distribution / packaging
-
 .Python
 build/
 develop-eggs/
@@ -23,29 +20,34 @@ parts/
 sdist/
 var/
 wheels/
-_.egg-info/
+*.egg-info/
 .installed.cfg
-_.egg
+*.egg
 MANIFEST
 
-# If your database is managed by the version control
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
 
-\*.db-journal
+# If your database is managed by the version control
+*.db-journal
 
 # Media files
-
 media/
 
 # Static files
-
 staticfiles/
 
 # Local environment settings
-
-.env
+# .env.*
 
 # venv
-
+myenv/
 venv/
 venv_new/
 ENV/
@@ -54,54 +56,46 @@ env/
 .ENV/
 
 # VS Code settings
-
 .vscode/
+**/.vscode-server/**
 
 # macOS
-
 .DS_Store
 
-# Coverage reports
+# PyCharm
+.idea/
 
+# mypy
+.mypy_cache/
+
+# Coverage reports
 htmlcov/
 .tox/
 .nox/
 coverage.xml
-_.cover
-_.py,cover
+*.cover
+*.py,cover
 .hypothesis/
 
 # Translations
-
-\*.mo
+*.mo
 
 # Logs
-
-\*.log
+*.log
 logs/
 
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
 # Sphinx documentation
+docs/_build/
 
-docs/\_build/
+# pytest
+.pytest_cache/
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# local changes
+local_settings.py
 
-# testing
-/coverage
-
-# production
-/build
-
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# local storage
+sivista_be_data/
