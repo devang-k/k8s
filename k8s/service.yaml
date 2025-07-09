@@ -1,14 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: sivista-frontend-service
-  namespace: default
+  name: sivista-be-service
 spec:
   selector:
-    app: sivista-frontend
+    app: sivista-be
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 3000
-      nodePort: 30000
+      port: 6601
+      targetPort: 8000
+      nodePort: 30001
   type: NodePort
