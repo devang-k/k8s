@@ -4,9 +4,12 @@ metadata:
   name: dev-config
 data:
   DBNAME_DEV: "SiVistadb_DistinctJobss"
-  USERNAME_DEV: "SiClarity"
+  USERNAME_DEV: ${{ secrets.USERNAME_DEV }}
+  PASSWORD_DEV: ${{ secrets.PASSWORD_DEV }}
   HOST_DEV: "13.126.133.62"
   PORT_DEV: "3005"
+  AWS_ACCESS_KEY_ID_DEV: ${{ secrets.AWS_ACCESS_KEY_ID_DEV }}
+  AWS_SECRET_ACCESS_KEY_DEV: ${{ secrets.AWS_SECRET_ACCESS_KEY_DEV }}
   AWS_STORAGE_BUCKET_NAME_DEV: "sivista-dev-storage-baseline"
   AWS_S3_REGION_NAME_DEV: "ap-south-1"
   AWS_S3_CUSTOM_DOMAIN_DEV: "sivista-dev-storage-baseline.s3.amazonaws.com"
@@ -21,5 +24,11 @@ data:
   REDIS_HOST_DEV: "13.126.133.62"
   REDIS_PORT_DEV: "3004"
   ELASTICSEARCH_URL: ""
+  ELASTICSEARCH_USERNAME: "elastic"
+  ELASTICSEARCH_PASSWORD: ""
   KIBANA_URL: ""
+  KIBANA_USERNAME: "kibana_system"
+  KIBANA_PASSWORD: ""
+  KIBANA_USERNAME_ADMIN: "kibana_admin"
+  KIBANA_PASSWORD_ADMIN: ""
   ENABLE_ELASTIC_LOGGING: "false"
