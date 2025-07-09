@@ -7,7 +7,7 @@ spec:
     app: sivista-be
   ports:
     - protocol: TCP
-      port: 6601
+      port: 8000
       targetPort: 8000
       nodePort: 30001
   type: NodePort

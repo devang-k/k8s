@@ -5,7 +5,7 @@ metadata:
   labels:
     app: sivista-be
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: sivista-be
@@ -16,35 +16,7 @@ spec:
     spec:
       containers:
       - name: sivista-backend
-        image: siclarity/sivista_backend_sprint4:${VERSION} # You need to replace VERSION with the appropriate tag
+        image: siclarity/sivista_backend_sprint4:${VERSION}
+        image: ghcr.io/devang-k/k8s/sivista_frontend_sprint4:1.0.0.415
         ports:
         - containerPort: 8000
-        env:
-        - name: DJANGO_ENV
-          value: ".env.dev"
-        - name: DBNAME_DEV
-          value: "SiVista_DB"
-        - name: USERNAME_DEV
-          valueFrom:
-            secretKeyRef:
-              name: backend-secrets
-              key: username
-        - name: PASSWORD_DEV
-          valueFrom:
-            secretKeyRef:
-              name: backend-secrets
-              key: password
-        - name: AWS_ACCESS_KEY_ID_DEV
-          valueFrom:
-            secretKeyRef:
-              name: backend-secrets
-              key: aws_access_key_id
-        - name: AWS_SECRET_ACCESS_KEY_DEV
-          valueFrom:
-            secretKeyRef:
-              name: backend-secrets
-              key: aws_secret_access_key
-        - name: AWS_STORAGE_BUCKET_NAME_DEV
-          value: "sivista-dev-sprint-storage"
-        - name: GRPC_CHANNEL_DEV
-          value: "13.126.133.62:6602"
