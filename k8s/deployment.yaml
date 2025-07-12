@@ -23,9 +23,6 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
-          envFrom:
-            - configMapRef:
-                name: sivista-frontend-config
           resources:
             limits:
               cpu: "500m"

@@ -46,10 +46,26 @@ jobs:
           echo "IMAGE_NAME=$IMAGE_NAME" >> $GITHUB_ENV
 
       - name: Build Docker Image
+        env:
+          REACT_APP_API_URL: "http://13.126.133.62:6601"
+          REACT_APP_WEBSOCKET_API_URL: "ws://13.126.133.62:6601/ws/job"
+          REACT_APP_DEBUG: "true"
+          GENERATE_SOURCEMAP: "false"
+          REACT_APP_ENABLE_POC_BUTTON: "true"
+          REACT_APP_CURRENT_APP_VERSION: "2"
+          PORT: "3000"
         run: |
           docker build \
-            --label org.opencontainers.image.source=https://github.com/$REPO_NAME \
+            --build-arg REACT_APP_API_URL=${REACT_APP_API_URL} \
+            --build-arg REACT_APP_WEBSOCKET_API_URL=${REACT_APP_WEBSOCKET_API_URL} \
+            --build-arg REACT_APP_DEBUG=${REACT_APP_DEBUG} \
+            --build-arg GENERATE_SOURCEMAP=${GENERATE_SOURCEMAP} \
+            --build-arg REACT_APP_ENABLE_POC_BUTTON=${REACT_APP_ENABLE_POC_BUTTON} \
+            --build-arg REACT_APP_CURRENT_APP_VERSION=${REACT_APP_CURRENT_APP_VERSION} \
+            --build-arg PORT=${PORT} \
+            --label org.opencontainers.image.source=https://github.com/${{ github.repository }} \
             -t $IMAGE_NAME:${{ steps.extract_version.outputs.version }} .
+
 
       - name: Push Docker Image
         run: |
