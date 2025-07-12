@@ -23,6 +23,9 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
+          envFrom:
+            - configMapRef:
+                name: sivista-frontend-config
           resources:
             limits:
               cpu: "500m"
@@ -30,3 +33,7 @@ spec:
             requests:
               cpu: "200m"
               memory: "256Mi"
+      tolerations:
+      - key: "node-role.kubernetes.io/control-plane"
+        operator: "Exists"
+        effect: "NoSchedule"
