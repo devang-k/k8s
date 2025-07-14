@@ -13,6 +13,15 @@ jobs:
       CI: true
       PORT: 8000
       DJANGO_ENV: .env.dev
+      DBNAME_DEV: SiClarity_Migration
+      USERNAME_DEV: SiClarity
+      PASSWORD_DEV: Sivista_01
+      AWS_ACCESS_KEY_ID_DEV: ${{ secrets.AWS_ACCESS_KEY_ID_DEV }}
+      AWS_SECRET_ACCESS_KEY_DEV: ${{ secrets.AWS_SECRET_ACCESS_KEY_DEV }}
+      AWS_STORAGE_BUCKET_NAME_DEV: sivista-dev-sprint-storage
+      IMAGE_NAME: siclarity/sivista_backend_sprint4
+      CONTAINER_NAME: sivistaBE_Sprint4
+      GRPC_CHANNEL_DEV: 13.126.133.62:6602
 
     steps:
       - name: Checkout Repository
@@ -52,6 +61,15 @@ jobs:
           docker build \
             --build-arg DJANGO_ENV=${{ env.DJANGO_ENV }} \
             --build-arg PORT=${{ env.PORT }} \
+            --build-arg DBNAME_DEV=${{ env.DBNAME_DEV }} \
+            --build-arg USERNAME_DEV=${{ env.USERNAME_DEV }} \
+            --build-arg PASSWORD_DEV=${{ env.PASSWORD_DEV }} \
+            --build-arg AWS_ACCESS_KEY_ID_DEV=${{ env.AWS_ACCESS_KEY_ID_DEV }} \
+            --build-arg AWS_SECRET_ACCESS_KEY_DEV=${{ env.AWS_SECRET_ACCESS_KEY_DEV }} \
+            --build-arg AWS_STORAGE_BUCKET_NAME_DEV=${{ env.AWS_STORAGE_BUCKET_NAME_DEV }} \
+            --build-arg IMAGE_NAME=${{ env.IMAGE_NAME }} \
+            --build-arg CONTAINER_NAME=${{ env.CONTAINER_NAME }} \
+            --build-arg GRPC_CHANNEL_DEV=${{ env.GRPC_CHANNEL_DEV }} \
             -f ./SiVista_BE/Dockerfile \
             --label org.opencontainers.image.source=https://github.com/$REPO_NAME \
             -t $IMAGE_NAME:${{ steps.extract_version.outputs.version }} \
