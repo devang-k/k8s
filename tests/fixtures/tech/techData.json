@@ -1,0 +1,1168 @@
+{
+    "FileContent": [
+        {
+            "supportsVariations": false,
+            "uiVisible": true,
+            "name": "layer_map",
+            "displayName": "Layer Map",
+            "data": [
+                {
+                    "key": {
+                        "key1": "ndiffcon"
+                    },
+                    "type": 2,
+                    "options": null,
+                    "val": [
+                        104,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "pdiffcon"
+                    },
+                    "type": 2,
+                    "options": null,
+                    "val": [
+                        105,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "ndiff"
+                    },
+                    "type": 2,
+                    "options": null,
+                    "val": [
+                        100,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "pdiff"
+                    },
+                    "type": 2,
+                    "options": null,
+                    "val": [
+                        103,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "npoly"
+                    },
+                    "type": 2,
+                    "options": null,
+                    "val": [
+                        102,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "gate_isolation"
+                    },
+                    "type": 2,
+                    "options": null,
+                    "val": [
+                        122,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "dummy_gate"
+                    },
+                    "type": 2,
+                    "options": null,
+                    "val": [
+                        121,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "ppoly"
+                    },
+                    "type": 2,
+                    "options": null,
+                    "val": [
+                        103,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "pviag"
+                    },
+                    "type": 2,
+                    "options": null,
+                    "val": [
+                        106,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "nviag"
+                    },
+                    "type": 2,
+                    "options": null,
+                    "val": [
+                        107,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "ndiff_dvb"
+                    },
+                    "type": 2,
+                    "options": null,
+                    "val": [
+                        111,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "pdiff_dvb"
+                    },
+                    "type": 2,
+                    "options": null,
+                    "val": [
+                        111,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "metal0"
+                    },
+                    "type": 2,
+                    "options": null,
+                    "val": [
+                        200,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "metal0_label"
+                    },
+                    "type": 2,
+                    "options": null,
+                    "val": [
+                        200,
+                        1
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "metal0_pin"
+                    },
+                    "type": 2,
+                    "options": null,
+                    "val": [
+                        200,
+                        2
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "metal0_pin_label"
+                    },
+                    "type": 2,
+                    "options": null,
+                    "val": [
+                        200,
+                        3
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "diff_interconnect"
+                    },
+                    "type": 2,
+                    "options": null,
+                    "val": [
+                        123,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "pviat"
+                    },
+                    "type": 2,
+                    "options": null,
+                    "val": [
+                        108,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "nviat"
+                    },
+                    "type": 2,
+                    "options": null,
+                    "val": [
+                        109,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "back_metal0"
+                    },
+                    "type": 2,
+                    "options": null,
+                    "val": [
+                        300,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "back_metal0_label"
+                    },
+                    "type": 2,
+                    "options": null,
+                    "val": [
+                        300,
+                        1
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "back_metal0_pin"
+                    },
+                    "type": 2,
+                    "options": null,
+                    "val": [
+                        300,
+                        2
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "back_metal0_pin_label"
+                    },
+                    "type": 2,
+                    "options": null,
+                    "val": [
+                        300,
+                        3
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "cell_boundary"
+                    },
+                    "type": 2,
+                    "options": null,
+                    "val": [
+                        1,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "bspdn_pmos_via"
+                    },
+                    "type": 2,
+                    "options": null,
+                    "val": [
+                        110,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "metal1"
+                    },
+                    "type": 2,
+                    "options": null,
+                    "val": [
+                        202,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "metal1_label"
+                    },
+                    "type": 2,
+                    "options": null,
+                    "val": [
+                        202,
+                        1
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "metal1_pin"
+                    },
+                    "type": 2,
+                    "options": null,
+                    "val": [
+                        202,
+                        2
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "metal1_pin_label"
+                    },
+                    "type": 2,
+                    "options": null,
+                    "val": [
+                        202,
+                        3
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "metal0_track_guide"
+                    },
+                    "type": 2,
+                    "options": null,
+                    "val": [
+                        220,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "metal1_track_guide"
+                    },
+                    "type": 2,
+                    "options": null,
+                    "val": [
+                        221,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "via0"
+                    },
+                    "type": 2,
+                    "options": null,
+                    "val": [
+                        201,
+                        0
+                    ],
+                    "isSelected": false
+                }
+            ]
+        },
+        {
+            "supportsVariations": true,
+            "uiVisible": true,
+            "name": "other",
+            "displayName": "Other",
+            "data": [
+                {
+                    "key": {
+                        "key1": "flipped"
+                    },
+                    "type": 3,
+                    "options": [
+                        "R0",
+                        "Mx",
+                        "My"
+                    ],
+                    "val": "R0",
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "technology"
+                    },
+                    "type": 3,
+                    "options": [
+                        "cfet",
+                        "gaa"
+                    ],
+                    "val": "cfet",
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "backside_power_rail"
+                    },
+                    "type": 5,
+                    "options": null,
+                    "val": false,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "routing_capability"
+                    },
+                    "type": 3,
+                    "options": [
+                        "Single Metal Solution",
+                        "Two Metal Solution"
+                    ],
+                    "val": "Single Metal Solution",
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "half_dr"
+                    },
+                    "type": 5,
+                    "options": null,
+                    "val": false,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "inner_space_width"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 6,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "nanosheet_width"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 21,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "power_rail_width"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 37.5,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "via_extension"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 2.5,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "gate_extension"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 15,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "interconnect_extension"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 0,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "vertical_gate_spacing"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 10,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "vertical_interconnect_spacing"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 20,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "m0_pitch"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 30,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "vertical_metal_pitch"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 30,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "number_of_routing_tracks"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 6,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "placer"
+                    },
+                    "type": 3,
+                    "options": [
+                        "base0",
+                        "base1",
+                        "base2"
+                    ],
+                    "val": "base0",
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "height_req"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 1,
+                    "isSelected": false
+                }
+            ]
+        },
+        {
+            "supportsVariations": true,
+            "uiVisible": true,
+            "name": "min_spacing",
+            "displayName": "Min Spacing",
+            "data": [
+                {
+                    "key": {
+                        "key1": "pdiffcon",
+                        "key2": "poly"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 6,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "ndiffcon",
+                        "key2": "poly"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 6,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "pdiffcon",
+                        "key2": "npoly"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 6,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "ndiffcon",
+                        "key2": "npoly"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 6,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "pdiffcon",
+                        "key2": "ppoly"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 6,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "ndiffcon",
+                        "key2": "ppoly"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 6,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "metal0",
+                        "key2": "metal0"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 25,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "nanosheet",
+                        "key2": "diff_interconnect"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 15,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "back_metal0",
+                        "key2": "back_metal0"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 0,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "nanosheet",
+                        "key2": "nanosheet"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 0,
+                    "isSelected": false
+                }
+            ]
+        },
+        {
+            "supportsVariations": true,
+            "uiVisible": true,
+            "name": "layer_width",
+            "displayName": "Wire Width",
+            "data": [
+                {
+                    "key": {
+                        "key1": "poly"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 15,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "npoly"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 15,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "ppoly"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 15,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "metal0"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 12,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "ndiffcon"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 18,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "pdiffcon"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 18,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "metal0_track_guide"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 12.5,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "metal1"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 12,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "metal1_track_guide"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 12.5,
+                    "isSelected": false
+                }
+            ]
+        },
+        {
+            "supportsVariations": false,
+            "uiVisible": true,
+            "name": "permutation",
+            "displayName": "Permutation",
+            "data": [
+                {
+                    "name": "placer",
+                    "displayName": "Placer",
+                    "parameterName": "other",
+                    "attribute": "",
+                    "value": [
+                        "base0",
+                        "base1"
+                    ]
+                }
+            ]
+        },
+        {
+            "supportsVariations": false,
+            "uiVisible": false,
+            "name": "hinder",
+            "displayName": "Hinder",
+            "data": [
+                {
+                    "key": {
+                        "key1": "ndiffcon"
+                    },
+                    "type": 3,
+                    "options": null,
+                    "val": "pdiffcon",
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "npoly"
+                    },
+                    "type": 3,
+                    "options": null,
+                    "val": "ppoly",
+                    "isSelected": false
+                }
+            ]
+        },
+        {
+            "supportsVariations": false,
+            "uiVisible": false,
+            "name": "f2f_layers",
+            "displayName": "FAce to face layers",
+            "data": [
+                {
+                    "key": {
+                        "key1": "NMOS_GATE"
+                    },
+                    "type": 2,
+                    "options": null,
+                    "val": ["NMOS_INTERCONNECT", "y"],
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "PMOS_GATE"
+                    },
+                    "type": 2,
+                    "options": null,
+                    "val": ["PMOS_INTERCONNECT", "y"],
+                    "isSelected": false
+                }
+            ]
+        },
+        {
+            "supportsVariations": false,
+            "uiVisible": false,
+            "name": "configs",
+            "displayName": "Configs",
+            "data": [
+                {
+                    "key": {
+                        "key1": "scaling_factor"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 4,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "db_unit"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 1e-09,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "cell_width"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 45,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "cell_height"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 150,
+                    "isSelected": false
+                }
+            ]
+        },
+        {
+            "supportsVariations": false,
+            "uiVisible": false,
+            "name": "routing_layers",
+            "displayName": "Routing Layers",
+            "data": [
+                {
+                    "key": {
+                        "key1": "ndiffcon"
+                    },
+                    "type": 3,
+                    "options": null,
+                    "val": "v",
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "pdiffcon"
+                    },
+                    "type": 3,
+                    "options": null,
+                    "val": "v",
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "poly"
+                    },
+                    "type": 3,
+                    "options": null,
+                    "val": "v",
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "npoly"
+                    },
+                    "type": 3,
+                    "options": null,
+                    "val": "v",
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "ppoly"
+                    },
+                    "type": 3,
+                    "options": null,
+                    "val": "v",
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "metal0"
+                    },
+                    "type": 3,
+                    "options": null,
+                    "val": "h",
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "back_metal0"
+                    },
+                    "type": 3,
+                    "options": null,
+                    "val": "h",
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "nanosheet"
+                    },
+                    "type": 3,
+                    "options": null,
+                    "val": "h",
+                    "isSelected": false
+                }
+            ]
+        },
+        {
+            "supportsVariations": false,
+            "uiVisible": false,
+            "name": "via_size",
+            "displayName": "Via Size",
+            "data": [
+                {
+                    "key": {
+                        "key1": "pviag"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 23,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "pdiff_dvb"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 18,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "ndiff_dvb"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 18,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "pviat"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 15,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "diff_interconnect"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 15,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "diff_interconnect"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 15,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "nviat"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 15,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "nviag"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 23,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "via0"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 12.5,
+                    "isSelected": false
+                }
+            ]
+        },
+        {
+            "supportsVariations": false,
+            "uiVisible": false,
+            "name": "minimum_enclosure",
+            "displayName": "Minimum Enclosure",
+            "data": [
+                {
+                    "key": {
+                        "key1": "ndiffcon",
+                        "key2": "pviag"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 0,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "metal0",
+                        "key2": "pviat"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 0,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "metal0",
+                        "key2": "pviag"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 0,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "metal0",
+                        "key2": "pviag"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 0,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "back_metal0",
+                        "key2": "ndiff_dvb"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 0,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "back_metal0",
+                        "key2": "ndiff_dvb"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 0,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "nanosheet",
+                        "key2": "pviag"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 0,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "nanosheet",
+                        "key2": "pviag"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 0,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "nanosheet",
+                        "key2": "pviag"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 0,
+                    "isSelected": false
+                },
+                {
+                    "key": {
+                        "key1": "poly",
+                        "key2": "pviat"
+                    },
+                    "type": 1,
+                    "options": null,
+                    "val": 0,
+                    "isSelected": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+# Optuna parameters
+optuna: false
+n_trials: 100
+study_name: "resistance_gnn_optimization"
+
+# Training parameters
+epochs: 150
+batch_size: 32
+learning_rate: 0.05
+hidden_channels: 64
+max_grad_norm: 1.0 
+num_relations: 4
+# Data parameters
+data_dir: "resistance_graphs_for_gnn_v3_no_z_dist"
+train_split: 0.8
+split_method: "cell_type"
+
+transform_type: "asinh"
+seed: 42
+loss_type: "mse"
+use_original_units: false
+no_early_stopping: true
+# Model parameters
+save_dir: "resistance_graph/asinh_mse_model_corrected_nanosheet_polygons"
+device: "cpu"  # Will use MPS on Mac, falling back to CUDA if available, then CPU as last resort
+
+# SWA parameters
+swa: false
+swa_start: 0.3
+swa_lr: 0.001
+swa_freq: 5
+
+# Weighted loss parameters
+weighted_loss: false

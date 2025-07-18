@@ -1,0 +1,130 @@
+{
+    "Layers": {
+        "100": {
+            "Name": "NmosNanoSheet",
+            "direction": "H"
+        },
+        "103": {
+            "Name": "PmosNanoSheet",
+            "direction": "H"
+        },
+        "305": {
+            "Name": "NMOSGate",
+            "direction": "V",
+            "width": 15
+        },
+        "307": {
+            "Name": "PMOSGate",
+            "direction": "V",
+            "width": 15
+        },
+        "310": {
+            "Name": "DiffusionLayer",
+            "direction": "V"
+        },
+        "400": {
+            "Name": "NMOSInterconnect",
+            "direction": "V",
+            "width": 18
+        },
+        "402": {
+            "Name": "PMOSInterconnect",
+            "direction": "V",
+            "width": 18
+        },
+        "404": {
+            "Name": "VIA_Inteconnect_BSPowerRail",
+            "connector": [
+                [
+                    800,
+                    400
+                ],
+                [
+                    800,
+                    402
+                ]
+            ]
+        },
+        "600": {
+            "Name": "VIA_PMOSInterconnect_NMOSInterconnect",
+            "connector": [
+                [
+                    402,
+                    400
+                ]
+            ]
+        },
+        "601": {
+            "Name": "Unused_Component",
+            "layer": 601
+        },
+        "602": {
+            "Name": "Unused_Component",
+            "layer": 602
+        },
+        "700": {
+            "Name": "VIA_M0_PMOSInterconnect",
+            "connector": [
+                [
+                    1000,
+                    402
+                ]
+            ]
+        },
+        "701": {
+            "Name": "VIA_M0_PMOSGate",
+            "connector": [
+                [
+                    1000,
+                    307
+                ]
+            ]
+        },
+        "800": {
+            "Name": "BSPowerRail",
+            "direction": "H",
+            "width": 37.5
+        },
+        "1000": {
+            "Name": "M0",
+            "direction": "H",
+            "width": 12
+        },
+        "2000": {
+            "Name": "HorizontalTracks",
+            "direction": "H"
+        },
+        "10000": {
+            "Name": "Boundary"
+        }
+    },
+    "layer1000Pitch": 25,
+    "InnerSpaceWidth": 6,
+    "ViaExtension": 2.5,
+    "layerExtension": 2.5,
+    "gateSheetExtension": 15,
+    "interconnectSheetExtension": 0,
+    "via600SheetGap": 15,
+    "InterconnectExtensionfromM0": 2.5,
+    "GateExtensionfromM0": 2.5,
+    "permViaLayers": [
+        700,
+        701
+    ],
+    "stepSize": 12.5,
+    "moveTogether": true,
+    "vertical_gate_spacing":10,
+    "vertical_interconnect_spacing" : 20,
+    "np_spacing" : 50,
+    "nanosheetWidth": 21,
+    "wireWidth": {
+        "npoly": 15,
+        "ppoly": 15,
+        "metal1": 12,
+        "ndiffusion": 18,
+        "pdiffusion": 18,
+        "metal_tracks": 12.5,
+        "metal2": 12,
+        "metal2_tracks": 12.5
+    }
+}

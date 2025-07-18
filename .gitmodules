@@ -1,0 +1,6 @@
+[submodule "lib_utils"]
+	path = lib_utils
+	url = https://github.com/Siclarity/lib_utils.git
+[submodule "tests/golden_data"]
+	path = tests/golden_data
+	url = https://github.com/Siclarity/golden_data.git

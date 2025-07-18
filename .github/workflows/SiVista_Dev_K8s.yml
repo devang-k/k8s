@@ -3,27 +3,26 @@ name: SiVista_Dev_k8s_deploy
 on:
   push:
     branches:
-      - main-be
+      - main-ml
 
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
 
     env:
-      CI: true
-      PORT: 8000
-      DJANGO_ENV: .env.dev
-      DBNAME_DEV: SiClarity_k8s
-      USERNAME_DEV: SiClarity
-      PASSWORD_DEV: Sivista_01
+      PORT: 50051
+      ML_ENV: .env.dev
       AWS_ACCESS_KEY_ID_DEV: ${{ secrets.AWS_ACCESS_KEY_ID_DEV }}
       AWS_SECRET_ACCESS_KEY_DEV: ${{ secrets.AWS_SECRET_ACCESS_KEY_DEV }}
       AWS_STORAGE_BUCKET_NAME_DEV: sivista-dev-k8s-storage
-      AWS_S3_CUSTOM_DOMAIN_DEV: sivista-dev-k8s-storage.s3.amazonaws.com
-      IMAGE_NAME: siclarity/sivista_backend_sprint4
-      CONTAINER_NAME: sivistaBE_Sprint4
-      GRPC_CHANNEL_DEV: 13.126.133.62:6602
-
+      AWS_S3_REGION_NAME_DEV: ap-south-1
+      SHARED_MEMORY: /app/shared_memory/
+      mount_source: shared_memory_volume_sivista_integration
+      mount_target: /app/shared_memory
+      THIRD_PARTY_GRPC: 13.126.133.62:30003
+      STORAGE_TYPE: ${{ secrets.STORAGE_TYPE }}
+      IMAGE_NAME: siclarity/sivista_ml
+      CONTAINER_NAME: sivistaML
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -31,13 +30,13 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
-      - name: Extract Version from build.sh
+      - name: Extract Version from version.conf
         id: extract_version
         run: |
-          version=$(grep -oP 'VERSION="\K[^"]+' SiVista_BE/build.sh)
+          version=$(grep 'VERSION=' version.conf | cut -d '"' -f 2)
           echo "Version is: $version"
           echo "version=$version" >> $GITHUB_OUTPUT
-
+          
       - name: Log Push Details
         run: |
           echo "Push event to branch: ${{ github.ref_name }}"
@@ -53,54 +52,30 @@ jobs:
       - name: Set dynamic environment variables
         run: |
           REPO_NAME=$(echo "${{ github.repository }}" | tr '[:upper:]' '[:lower:]')
-          IMAGE_NAME="ghcr.io/${REPO_NAME}/sivista_backend_sprint4"
+          IMAGE_NAME="ghcr.io/${REPO_NAME}/sivista_ml_sprint4"
           echo "REPO_NAME=$REPO_NAME" >> $GITHUB_ENV
           echo "IMAGE_NAME=$IMAGE_NAME" >> $GITHUB_ENV
 
       - name: Build Docker Image
         run: |
-          docker build \
-            --build-arg DJANGO_ENV=${{ env.DJANGO_ENV }} \
-            --build-arg PORT=${{ env.PORT }} \
-            --build-arg DBNAME_DEV=${{ env.DBNAME_DEV }} \
-            --build-arg USERNAME_DEV=${{ env.USERNAME_DEV }} \
-            --build-arg PASSWORD_DEV=${{ env.PASSWORD_DEV }} \
-            --build-arg AWS_ACCESS_KEY_ID_DEV=${{ env.AWS_ACCESS_KEY_ID_DEV }} \
-            --build-arg AWS_SECRET_ACCESS_KEY_DEV=${{ env.AWS_SECRET_ACCESS_KEY_DEV }} \
-            --build-arg AWS_STORAGE_BUCKET_NAME_DEV=${{ env.AWS_STORAGE_BUCKET_NAME_DEV }} \
-            --build-arg AWS_S3_CUSTOM_DOMAIN_DEV=${{ env.AWS_S3_CUSTOM_DOMAIN_DEV }} \
-            --build-arg IMAGE_NAME=${{ env.IMAGE_NAME }} \
-            --build-arg CONTAINER_NAME=${{ env.CONTAINER_NAME }} \
-            --build-arg GRPC_CHANNEL_DEV=${{ env.GRPC_CHANNEL_DEV }} \
-            -f ./SiVista_BE/Dockerfile \
+          docker build --no-cache --progress=plain \
+            --build-arg ML_ENV=.env.dev \
+            --build-arg AWS_ACCESS_KEY_ID_DEV=${{ secrets.AWS_ACCESS_KEY_ID_DEV }} \
+            --build-arg AWS_SECRET_ACCESS_KEY_DEV=${{ secrets.AWS_SECRET_ACCESS_KEY_DEV }} \
+            --build-arg AWS_STORAGE_BUCKET_NAME_DEV=sivista-dev-k8s-storage \
+            --build-arg AWS_S3_REGION_NAME_DEV=ap-south-1 \
+            --build-arg SHARED_MEMORY=/app/shared_memory/ \
+            --build-arg mount_source=shared_memory_volume_sivista_k8s \
+            --build-arg mount_target=/app/shared_memory \
+            --build-arg THIRD_PARTY_GRPC=13.126.133.62:30003 \
+            --build-arg STORAGE_TYPE=${{ secrets.STORAGE_TYPE }} \
+            --build-arg IMAGE_NAME=siclarity/sivista_ml \
+            --build-arg CONTAINER_NAME=sivistaML \
             --label org.opencontainers.image.source=https://github.com/$REPO_NAME \
-            -t $IMAGE_NAME:${{ steps.extract_version.outputs.version }} \
-            ./SiVista_BE
+            -t $IMAGE_NAME:${{ steps.extract_version.outputs.version }} .
 
       - name: Push Docker Image
         run: |
           docker push $IMAGE_NAME:${{ steps.extract_version.outputs.version }}
     outputs:
       version: ${{ steps.extract_version.outputs.version }}
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build-and-push
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-      - name: Set up kubectl
-        uses: azure/setup-kubectl@v3
-        with:
-          version: 'v1.21.0'
-      - name: Set up Kubeconfig
-        run: |
-          mkdir -p $HOME/.kube
-          echo "${{ secrets.KUBE_CONFIG }}" > $HOME/.kube/config
-      - name: Check network connectivity to K8s API Server
-        run: nc -zv 13.203.185.95 6443
-      - name: Deploy to Kubernetes
-        run: |
-          export VERSION="${{ needs.build-and-push.outputs.version }}"
-          envsubst < k8s/deployment.yaml | kubectl apply -f -
-          kubectl apply -f k8s/service.yaml
-

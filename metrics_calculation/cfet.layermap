@@ -1,0 +1,22 @@
+# Layer map for mono-CFET technology
+
+#layername                                         layerpurpose            stream# datatype
+NMOS_NANOSHEET                                      drawing                 100     0
+NMOS_ACT_PATTERNED                                  drawing                 100     1
+PMOS_NANOSHEET                                      drawing                 101     0
+PMOS_ACT_PATTERNED                                  drawing                 101     1
+NMOS_GATE                                           drawing                 102     0
+NMOS_INTERCONNECT                                   drawing                 104     0
+PMOS_GATE                                           drawing                 103     0
+PMOS_INTERCONNECT                                   drawing                 105     0
+SINGLE_DIFFUSION_BREAK                              drawing                 121     0
+VIA_FROM_INTERCONNECT_TO_BACKSIDE_POWER_TSVBAR       drawing                111     0
+VIA_FROM_PMOS_INTERCONNECT_TO_NMOS_INTERCONNECT      drawing                123     0
+VIA_FROM_M0_TO_PMOS_INTERCONNECT_VCT                 drawing                108     0
+VIA_FROM_M0_TO_PMOS_GATE_VG                          drawing                106     0
+M2_BACKSIDE_POWER_LINES                              drawing                300     0
+BACKSIDE_POWER_LINES_LABEL                          drawing                 300     1
+M0                                                  drawing                 200     0
+M0_LABEL                                            drawing                 200     1
+CELL_BOUNDARY                                       drawing                 1       0
+

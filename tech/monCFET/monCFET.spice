@@ -1,0 +1,2084 @@
+.global vdd gnd
+
+.subckt AND2X1 Y B vdd gnd A
+M0 a_2_6# A vdd vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M1 vdd B a_2_6# vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M2 Y a_2_6# vdd vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M3 a_9_6# A a_2_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M4 gnd B a_9_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M5 Y a_2_6# gnd gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+.ends AND2X1
+
+.subckt AND2X2 vdd gnd A B Y
+M0 a_2_6# A vdd vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M1 vdd B a_2_6# vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M2 Y a_2_6# vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M3 a_9_6# A a_2_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M4 gnd B a_9_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M5 Y a_2_6# gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+.ends AND2X2
+
+.subckt AOI21X1 gnd vdd A B Y C
+M0 a_2_54# A vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M1 vdd B a_2_54# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M2 a_2_54# C Y vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M3 gnd A a_12_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M4 a_12_6# B Y gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M5 Y C gnd gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+.ends AOI21X1
+
+.subckt AOI22X1 gnd vdd C D Y A B
+M0 a_2_54# A vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M1 vdd B a_2_54# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M2 a_2_54# D Y vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M3 Y C a_2_54# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M4 gnd A a_11_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M5 a_11_6# B Y gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M6 Y D a_28_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M7 a_28_6# C a_28_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+.ends AOI22X1
+
+.SUBCKT ASYNC_DFFHX1 CLK D QN RESET SET VDD GND
+MM43 PD3 SET GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM24 QN SH GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM29 SS SH GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM23 CLKB CLKN GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM20 CLKN CLK GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM44 SS RESET GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM34 SH CLKN PD3 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM48 NET020 RESET GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM12 MS CLKB SH GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM33 PD3 SS GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM9 MH CLKB NET020 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM8 NET020 MS GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM6 MS MH GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM5 PD1 D GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM4 MH CLKN PD1 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM47 MS SET GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM25 QN SH VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM28 SS SH NET076 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM22 CLKB CLKN VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM45 NET076 RESET VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM46 NET079 SET VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM21 CLKN CLK VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM37 PD2 SS NET077 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM35 SH CLKB PD2 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM49 NET078 RESET VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM13 MS CLKN SH VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM11 NET051 MS NET078 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM10 MH CLKN NET051 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM7 MS MH NET079 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM42 NET077 SET VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM1 MH CLKB PU1 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM3 PU1 D VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+.ENDS ASYNC_DFFHX1
+
+.subckt BUFX2 vdd gnd A Y
+M0 vdd A a_2_6# vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M1 Y a_2_6# vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M2 gnd A a_2_6# gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M3 Y a_2_6# gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+.ends BUFX2
+
+.subckt BUFX4 vdd gnd A Y
+M0 vdd A a_2_6# vdd pmos w=0.75u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M1 Y a_2_6# vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M2 vdd a_2_6# Y vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M3 gnd A a_2_6# gnd nmos w=1.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M4 Y a_2_6# gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M5 gnd a_2_6# Y gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+.ends BUFX4
+
+.SUBCKT CELL30 GND VDD D S R Q CLK
+M0  A_2_6# R VDD VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M1  VDD A_10_61# A_2_6# VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M2  A_10_61# A_23_27# VDD VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M3  VDD S A_10_61# VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M4  A_23_27# A_47_71# A_2_6# VDD PMOS W=0.25U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M5  A_57_6# A_47_4# A_23_27# VDD PMOS W=0.25U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M6  VDD D A_57_6# VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M7  VDD A_47_71# A_47_4# VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M8  A_47_71# CLK VDD VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M9  A_105_6# A_47_71# A_10_61# VDD PMOS W=0.25U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M10 A_113_6# A_47_4# A_105_6# VDD PMOS W=0.25U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M11 A_122_6# A_105_6# VDD VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M12 VDD R A_122_6# VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M13 A_113_6# A_122_6# VDD VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M14 VDD S A_113_6# VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M15 VDD A_122_6# Q VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M16 A_10_6# R A_2_6# GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M17 GND A_10_61# A_10_6# GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M18 A_26_6# A_23_27# GND GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M19 A_10_61# S A_26_6# GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M20 A_23_27# A_47_4# A_2_6# GND NMOS W=0.25U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M21 A_57_6# A_47_71# A_23_27# GND NMOS W=0.25U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M22 GND D A_57_6# GND NMOS W=0.25U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M23 GND A_47_71# A_47_4# GND NMOS W=0.25U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M24 A_47_71# CLK GND GND NMOS W=0.25U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M25 A_105_6# A_47_4# A_10_61# GND NMOS W=0.25U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M26 A_113_6# A_47_71# A_105_6# GND NMOS W=0.25U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M27 A_130_6# A_105_6# A_122_6# GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M28 GND R A_130_6# GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M29 A_146_6# A_122_6# GND GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M30 A_113_6# S A_146_6# GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+.ENDS CELL30
+
+.subckt CLKBUF1 A vdd gnd Y
+M0 a_9_6# A vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M1 vdd A a_9_6# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M2 a_25_6# a_9_6# vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M3 vdd a_9_6# a_25_6# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M4 a_41_6# a_25_6# vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M5 vdd a_25_6# a_41_6# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M6 Y a_41_6# vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M7 vdd a_41_6# Y vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M8 a_9_6# A gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M9 gnd A a_9_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M10 a_25_6# a_9_6# gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M11 gnd a_9_6# a_25_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M12 a_41_6# a_25_6# gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M13 gnd a_25_6# a_41_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M14 Y a_41_6# gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M15 gnd a_41_6# Y gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+.ends CLKBUF1
+
+.subckt CLKBUF2 vdd gnd A Y
+M0 a_9_6# A vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M1 vdd A a_9_6# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M2 a_25_6# a_9_6# vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M3 vdd a_9_6# a_25_6# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M4 a_41_6# a_25_6# vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M5 vdd a_25_6# a_41_6# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M6 a_57_6# a_41_6# vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M7 vdd a_41_6# a_57_6# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M8 a_73_6# a_57_6# vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M9 vdd a_57_6# a_73_6# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M10 Y a_73_6# vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M11 vdd a_73_6# Y vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M12 a_9_6# A gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M13 gnd A a_9_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M14 a_25_6# a_9_6# gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M15 gnd a_9_6# a_25_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M16 a_41_6# a_25_6# gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M17 gnd a_25_6# a_41_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M18 a_57_6# a_41_6# gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M19 gnd a_41_6# a_57_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M20 a_73_6# a_57_6# gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M21 gnd a_57_6# a_73_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M22 Y a_73_6# gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M23 gnd a_73_6# Y gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+.ends CLKBUF2
+
+.subckt CLKBUF3 gnd vdd A Y
+M0 a_9_6# A vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M1 vdd A a_9_6# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M2 a_25_6# a_9_6# vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M3 vdd a_9_6# a_25_6# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M4 a_41_6# a_25_6# vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M5 vdd a_25_6# a_41_6# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M6 a_57_6# a_41_6# vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M7 vdd a_41_6# a_57_6# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M8 a_73_6# a_57_6# vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M9 vdd a_57_6# a_73_6# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M10 a_89_6# a_73_6# vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M11 vdd a_73_6# a_89_6# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M12 a_105_6# a_89_6# vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M13 vdd a_89_6# a_105_6# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M14 Y a_105_6# vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M15 vdd a_105_6# Y vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M16 a_9_6# A gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M17 gnd A a_9_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M18 a_25_6# a_9_6# gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M19 gnd a_9_6# a_25_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M20 a_41_6# a_25_6# gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M21 gnd a_25_6# a_41_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M22 a_57_6# a_41_6# gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M23 gnd a_41_6# a_57_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M24 a_73_6# a_57_6# gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M25 gnd a_57_6# a_73_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M26 a_89_6# a_73_6# gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M27 gnd a_73_6# a_89_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M28 a_105_6# a_89_6# gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M29 gnd a_89_6# a_105_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M30 Y a_105_6# gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M31 gnd a_105_6# Y gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+.ends CLKBUF3
+
+.SUBCKT DFFHQX4 CLK D Q VDD GND
+MM38 Q NET049 GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM24 NET049 SH GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM23 CLKB CLKN GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM20 CLKN CLK GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM17 SH CLKN PD5 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM16 PD5 SS GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM14 SS SH GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM12 MS CLKB SH GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM9 MH CLKB PD3 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM8 PD3 MS GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM6 MS MH GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM5 PD1 D GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM4 MH CLKN PD1 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM25 NET049 SH VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM22 CLKB CLKN VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM21 CLKN CLK VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM19 PD4 SS VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM18 SH CLKB PD4 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM15 SS SH VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM13 MS CLKN SH VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM11 PD2 MS VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM10 MH CLKN PD2 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM7 MS MH VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM1 MH CLKB PU1 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM37 Q NET049 VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM3 PU1 D VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+.ENDS DFFHQX4
+
+.SUBCKT DFFLQX4 CLK D Q VDD GND
+MM0 Q QN GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM24 QN SH GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM17 SH CLKB PD5 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM16 PD5 SS GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM14 SS SH GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM12 MS CLKN SH GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM6 MS MH GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM9 MH CLKN PD3 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM8 PD3 MS GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM23 CLKB CLKN GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM5 PD1 D GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM4 MH CLKB PD1 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM20 CLKN CLK GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM2 Q QN VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM25 QN SH VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM19 PD4 SS VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM18 SH CLKN PD4 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM15 SS SH VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM13 MS CLKB SH VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM7 MS MH VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM11 PD2 MS VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM10 MH CLKB PD2 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM22 CLKB CLKN VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM1 MH CLKN PU1 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM3 PU1 D VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM21 CLKN CLK VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+.ENDS DFFLQX4
+
+.subckt DFFNEGX1 CLK vdd D gnd Q
+M0 vdd CLK a_2_6# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M1 a_17_74# D vdd vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M2 a_23_6# a_2_6# a_17_74# vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M3 a_31_74# CLK a_23_6# vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M4 vdd a_34_4# a_31_74# vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M5 a_34_4# a_23_6# vdd vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M6 a_61_74# a_34_4# vdd vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M7 a_66_6# CLK a_61_74# vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M8 a_76_84# a_2_6# a_66_6# vdd pmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M9 vdd Q a_76_84# vdd pmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M10 gnd CLK a_2_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M11 Q a_66_6# vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M12 a_17_6# D gnd gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M13 a_23_6# CLK a_17_6# gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M14 a_31_6# a_2_6# a_23_6# gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M15 gnd a_34_4# a_31_6# gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M16 a_34_4# a_23_6# gnd gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M17 a_61_6# a_34_4# gnd gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M18 a_66_6# a_2_6# a_61_6# gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M19 a_76_6# CLK a_66_6# gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M20 gnd Q a_76_6# gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M21 Q a_66_6# gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+.ends DFFNEGX1
+
+.subckt DFFPOSX1 vdd D gnd Q CLK
+M0 vdd CLK a_2_6# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M1 a_17_74# D vdd vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M2 a_22_6# CLK a_17_74# vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M3 a_31_74# a_2_6# a_22_6# vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M4 vdd a_34_4# a_31_74# vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M5 a_34_4# a_22_6# vdd vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M6 a_61_74# a_34_4# vdd vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M7 a_66_6# a_2_6# a_61_74# vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M8 a_76_84# CLK a_66_6# vdd pmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M9 vdd Q a_76_84# vdd pmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M10 gnd CLK a_2_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M11 Q a_66_6# vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M12 a_17_6# D gnd gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M13 a_22_6# a_2_6# a_17_6# gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M14 a_31_6# CLK a_22_6# gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M15 gnd a_34_4# a_31_6# gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M16 a_34_4# a_22_6# gnd gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M17 a_61_6# a_34_4# gnd gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M18 a_66_6# CLK a_61_6# gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M19 a_76_6# a_2_6# a_66_6# gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M20 gnd Q a_76_6# gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M21 Q a_66_6# gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+.ends DFFPOSX1
+
+.subckt DFFSR gnd vdd D S R Q CLK
+M0 a_2_6# R vdd vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M1 vdd a_10_61# a_2_6# vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M2 a_10_61# a_23_27# vdd vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M3 vdd S a_10_61# vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M4 a_23_27# a_47_71# a_2_6# vdd pmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M5 a_57_6# a_47_4# a_23_27# vdd pmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M6 vdd D a_57_6# vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M7 vdd a_47_71# a_47_4# vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M8 a_47_71# CLK vdd vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M9 a_105_6# a_47_71# a_10_61# vdd pmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M10 a_113_6# a_47_4# a_105_6# vdd pmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M11 a_122_6# a_105_6# vdd vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M12 vdd R a_122_6# vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M13 a_113_6# a_122_6# vdd vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M14 vdd S a_113_6# vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M15 vdd a_122_6# Q vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M16 a_10_6# R a_2_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M17 gnd a_10_61# a_10_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M18 a_26_6# a_23_27# gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M19 a_10_61# S a_26_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M20 a_23_27# a_47_4# a_2_6# gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M21 a_57_6# a_47_71# a_23_27# gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M22 gnd D a_57_6# gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M23 gnd a_47_71# a_47_4# gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M24 a_47_71# CLK gnd gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M25 a_105_6# a_47_4# a_10_61# gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M26 a_113_6# a_47_71# a_105_6# gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M27 a_130_6# a_105_6# a_122_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M28 gnd R a_130_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M29 a_146_6# a_122_6# gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M30 a_113_6# S a_146_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M31 gnd a_122_6# Q gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+.ends DFFSR
+
+.subckt FAX1 gnd vdd A B C YC YS
+M0 vdd A a_2_54# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M1 a_2_54# B vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M2 a_25_6# C a_2_54# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M3 a_33_54# B a_25_6# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M4 vdd A a_33_54# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M5 a_46_54# A vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M6 vdd B a_46_54# vdd pmos w=3.6u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M7 a_46_54# C vdd vdd pmos w=3.6u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M8 a_70_6# a_25_6# a_46_54# vdd pmos w=3.6u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M9 a_79_46# C a_70_6# vdd pmos w=4.8u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M10 a_84_46# B a_79_46# vdd pmos w=4.8u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M11 vdd A a_84_46# vdd pmos w=4.8u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M12 YS a_70_6# vdd vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M13 YC a_25_6# vdd vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M14 gnd A a_2_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M15 a_2_6# B gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M16 a_25_6# C a_2_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M17 a_33_6# B a_25_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M18 gnd A a_33_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M19 a_46_6# A gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M20 gnd B a_46_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M21 a_46_6# C gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M22 a_70_6# a_25_6# a_46_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M23 a_79_6# C a_70_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M24 a_84_6# B a_79_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M25 gnd A a_84_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M26 YS a_70_6# gnd gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M27 YC a_25_6# gnd gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+.ends FAX1
+
+.SUBCKT FAX1_1 A B CI CON SN VDD GND
+MM22 SN CI NET081 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM21 NET081 B NET082 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM20 NET082 A VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM15 SN CON NET027 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM14 NET027 CI VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM13 NET027 B VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM12 NET027 A VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM5 CON A NET37 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM6 NET37 B VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM2 NET27 B VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM1 CON CI NET27 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM0 NET27 A VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM25 SN CI NET080 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM24 NET080 B NET079 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM23 NET079 A GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM19 GND CI NET067 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM18 GND B NET067 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM17 GND A NET067 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM16 NET067 CON SN GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM11 GND B NET25 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM10 GND B NET36 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM9 GND A NET25 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM8 NET36 A CON GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM7 NET25 CI CON GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+.ENDS FAX1_1
+
+.SUBCKT FULL_ADDER_RCA_1_BIT A_0 B_0 CIN_0 SUM_0 CIN_1 VDD GND
+M1 ABAR_0 A_0 VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M2 ABAR_0 A_0 GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M3 BBAR_0 B_0 VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M4 BBAR_0 B_0 GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M5 WWW_0 A_0 VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M6 XXX_0 ABAR_0 VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M7 XORAB_0 B_0 XXX_0 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M8 XORAB_0 BBAR_0 WWW_0 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M9 XORAB_0 A_0 YYY_0 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M10 XORAB_0 ABAR_0 ZZZ_0 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M11 YYY_0 B_0 GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M12 ZZZ_0 BBAR_0 GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M13 XORABBAR_0 XORAB_0 VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M14 XORABBAR_0 XORAB_0 GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M15 CINBAR_0 CIN_0 VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M16 CINBAR_0 CIN_0 GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M17 PPP_0 XORAB_0 VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M18 QQQ_0 XORABBAR_0 VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M19 SUM_0 CIN_0 QQQ_0 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M20 SUM_0 CINBAR_0 PPP_0 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M21 SUM_0 XORAB_0 RRR_0 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M22 SUM_0 XORABBAR_0 SSS_0 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M23 RRR_0 CIN_0 GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M24 SSS_0 CINBAR_0 GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M25 A.B_0 A_0 VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M26 A.B_0 B_0 VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M27 A.B_0 A_0 JJJ_0 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M28 JJJ_0 B_0 GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M29 A_B.CIN_0 XORAB_0 VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M30 A_B.CIN_0 CIN_0 VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M31 A_B.CIN_0 XORAB_0 KKK_0 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M32 KKK_0 CIN_0 GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M33 CIN_1 A.B_0 VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M34 CIN_1 A_B.CIN_0 VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M35 CIN_1 A.B_0 LLL_0 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M36 LLL_0 A_B.CIN_0 GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+.ENDS FULL_ADDER_RCA_1_BIT
+
+.subckt HAX1 vdd gnd YC A B YS
+M0 vdd A a_2_74# vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M1 a_2_74# B vdd vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M2 vdd a_2_74# YC vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M3 a_41_74# a_2_74# vdd vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M4 a_49_54# B a_41_74# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M5 vdd A a_49_54# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M6 YS a_41_74# vdd vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M7 a_9_6# A gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M8 a_2_74# B a_9_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M9 gnd a_2_74# YC gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M10 a_38_6# a_2_74# gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M11 a_41_74# B a_38_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M12 a_38_6# A a_41_74# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M13 YS a_41_74# gnd gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+.ends HAX1
+
+.SUBCKT ICGX1 CLK ENA GCLK SE VDD GND
+MM18 NOS1 SE VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM16 GCLKN CLK VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM7 MS MH VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM11 PD2 MS VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM10 MH CLKN PD2 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM1 MH CLK PU1 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM3 PU1 NET0121 VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM21 CLKN CLK VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM25 GCLK GCLKN VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM26 NET0121 ENA NOS1 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U  
+MM0 GCLKN MH VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM2 GCLKN CLK NET0140 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM12 NET0141 MH GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM14 NET0140 MH GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U   
+MM6 MS MH GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM13 GCLKN CLK NET0141 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM9 MH CLK PD3 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM8 PD3 MS GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM27 NET0121 SE GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM19 NET0121 ENA GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM24 GCLK GCLKN GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM5 PD1 NET0121 GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM4 MH CLKN PD1 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM20 CLKN CLK GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+.ENDS ICGX1
+
+.subckt INVX1 A Y vdd gnd
+M0 Y A vdd vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M1 Y A gnd gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+.ends INVX1
+
+.subckt INVX2 vdd gnd Y A
+M0 Y A vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M1 Y A gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+.ends INVX2
+
+.subckt INVX4 vdd gnd Y A
+M0 Y A vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M1 vdd A Y vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M2 Y A gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M3 gnd A Y gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+.ends INVX4
+
+.subckt INVX8 vdd gnd A Y
+M0 Y A vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M1 vdd A Y vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M2 Y A vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M3 vdd A Y vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M4 Y A gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M5 gnd A Y gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M6 Y A gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M7 gnd A Y gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+.ends INVX8
+
+.subckt INVD4 vdd gnd IN OUT
+M0 OUT IN vdd vdd pmos w=1.2u l=0.019u  ad=0p pd=0u as=0p ps=0u
+M1 vdd IN OUT vdd pmos w=1.2u l=0.019u  ad=0p pd=0u as=0p ps=0u
+M2 OUT IN vdd vdd pmos w=1.2u l=0.019u  ad=0p pd=0u as=0p ps=0u
+M3 vdd IN OUT vdd pmos w=1.2u l=0.019u  ad=0p pd=0u as=0p ps=0u
+M4 OUT IN gnd gnd nmos w=1.2u l=0.019u  ad=0p pd=0u as=0p ps=0u
+M5 gnd IN OUT gnd nmos w=1.2u l=0.019u  ad=0p pd=0u as=0p ps=0u
+M6 OUT IN gnd gnd nmos w=1.2u l=0.019u  ad=0p pd=0u as=0p ps=0u
+M7 gnd IN OUT gnd nmos w=1.2u l=0.019u  ad=0p pd=0u as=0p ps=0u
+.ends INVD4 
+
+.SUBCKT JK_FF_42TRANSISTORS J K Q NQ VDD GND
+M0 VDD J A_2_6# VDD PMOS W=1U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M1 A_18_54# A_12_41# VDD VDD PMOS W=1U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M2 Q A_2_6# A_18_54# VDD PMOS W=1U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M3 A_35_54# J Q VDD PMOS W=1U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M4 VDD K A_35_54# VDD PMOS W=1U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M5 A_12_41# K VDD VDD PMOS W=1U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M6 VDD J A_2_6# VDD PMOS W=1U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M7 A_18_54# A_13_43# VDD VDD PMOS W=1U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M8 NQ A_2_6# A_18_54# VDD PMOS W=1U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M9 A_35_54# J NQ VDD PMOS W=1U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M10 VDD K A_35_54# VDD PMOS W=1U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M11 A_12_41# K VDD VDD PMOS W=1U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M12 VDD J A_2_6# VDD PMOS W=1U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M13 A_18_54# A_24_41# VDD VDD PMOS W=1U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M14 Q A_2_6# A_24_41# VDD PMOS W=1U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M15 A_35_54# J Q VDD PMOS W=1U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M16 VDD K A_35_54# VDD PMOS W=1U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M17 A_12_41# K VDD VDD PMOS W=1U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M18 VDD J A_2_6# VDD PMOS W=1U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M19 A_18_54# A_30_41# VDD VDD PMOS W=1U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M20 NQ A_2_6# A_18_54# VDD PMOS W=1U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M21 A_12_41# A_2_6# GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M22 GND A_2_6# A_12_41# GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M23 A_18_54# A_12_41# GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M24 GND A_12_41# A_18_54# GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M25 A_35_54# J NQ GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M26 GND J A_35_54# GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M27 A_12_41# K GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M28 GND K A_12_41# GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M29 A_18_54# A_24_41# GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M30 GND A_24_41# A_18_54# GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M31 A_35_54# J Q GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M32 GND J A_35_54# GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M33 A_12_41# K GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M34 GND K A_12_41# GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M35 A_18_54# A_30_41# GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M36 GND A_30_41# A_18_54# GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M37 A_35_54# J NQ GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M38 GND J A_35_54# GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M39 A_12_41# K GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M40 GND K A_12_41# GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+M41 Y A_18_54# GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+.ENDS JK_FF_42TRANSISTORS
+
+.subckt LATCH D Q gnd vdd CLK
+M0 vdd CLK a_2_6# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M1 a_18_74# D vdd vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M2 a_23_6# a_2_6# a_18_74# vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M3 a_35_84# CLK a_23_6# vdd pmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M4 vdd Q a_35_84# vdd pmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M5 gnd CLK a_2_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M6 Q a_23_6# vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M7 a_18_6# D gnd gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M8 a_23_6# CLK a_18_6# gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M9 a_35_6# a_2_6# a_23_6# gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M10 gnd Q a_35_6# gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M11 Q a_23_6# gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+.ends LATCH
+
+.subckt MUX2X1 S vdd gnd Y A B
+M0 vdd S a_2_10# vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M1 a_17_50# B vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M2 Y S a_17_50# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M3 a_30_54# a_2_10# Y vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M4 vdd A a_30_54# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M5 gnd S a_2_10# gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M6 a_17_10# B gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M7 Y a_2_10# a_17_10# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M8 a_30_10# S Y gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M9 gnd A a_30_10# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+.ends MUX2X1
+
+.subckt MUX21X1 S vdd gnd Q D1 D2
+
+* Define inverter for the select signal S
+M0 S_bar S vdd vdd pmos w=1u l=0.05u ad=0p pd=0u as=0p ps=0u
+M1 vdd D2 A1# vdd pmos w=1u l=0.05u ad=0p pd=0u as=0p ps=0u
+M2 A1# S_bar G# vdd pmos w=1u l=0.05u ad=0p pd=0u as=0p ps=0u
+M3 G# S A3# vdd pmos w=0.5u l=0.05u ad=0p pd=0u as=0p ps=0u
+M4 A3# D1 vdd vdd pmos w=0.5u l=0.05u ad=0p pd=0u as=0p ps=0u
+M5 vdd G# Q vdd pmos w=0.5u l=0.05u ad=0p pd=0u as=0p ps=0u
+
+M6 S_bar S gnd gnd nmos w=0.5u l=0.05u ad=0p pd=0u as=0p ps=0u
+M7 gnd D2 A2# gnd nmos w=1u l=0.05u ad=0p pd=0u as=0p ps=0u
+M8 A2# S G# gnd nmos w=1u l=0.05u ad=0p pd=0u as=0p ps=0u
+M9 G# S_bar A4# gnd nmos w=0.5u l=0.05u ad=0p pd=0u as=0p ps=0u
+M10 A4# D1 gnd gnd nmos w=0.5u l=0.05u ad=0p pd=0u as=0p ps=0u
+M11 gnd G# Q gnd nmos w=0.5u l=0.05u ad=0p pd=0u as=0p ps=0u
+
+.ends MUX21X1
+
+.subckt NAND2X1 vdd Y gnd A B
+M0 Y A vdd vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M1 vdd B Y vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M2 a_9_6# A gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M3 Y B a_9_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+.ends NAND2X1
+
+.subckt NAND3X1 B vdd gnd A C Y
+M0 Y A vdd vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M1 vdd B Y vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M2 Y C vdd vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M3 a_9_6# A gnd gnd nmos w=0.75u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M4 a_14_6# B a_9_6# gnd nmos w=0.75u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M5 Y C a_14_6# gnd nmos w=0.75u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+.ends NAND3X1
+
+.subckt NOR2X1 vdd B gnd Y A
+M0 a_9_54# A vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M1 Y B a_9_54# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M2 Y A gnd gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M3 gnd B Y gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+.ends NOR2X1
+
+.subckt NOR3X1 vdd gnd B C A Y
+M0 vdd A a_2_64# vdd pmos w=0.75u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M1 a_2_64# A vdd vdd pmos w=0.75u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M2 a_25_64# B a_2_64# vdd pmos w=0.75u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M3 a_2_64# B a_25_64# vdd pmos w=0.75u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M4 Y C a_25_64# vdd pmos w=0.75u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M5 a_25_64# C Y vdd pmos w=0.75u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M6 Y A gnd gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M7 gnd B Y gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M8 Y C gnd gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+.ends NOR3X1
+
+.SUBCKT OA333X2 A1 A2 A3 B1 B2 B3 C1 C2 C3 VDD GND Y
+MM20 VDD NET027 Y VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM19 NET058 B2 NET087 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM23 VDD A3 VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM13 VDD C3 NET040 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM14 NET084 A1 NET027 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM16 NET040 C2 NET086 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM12 NET087 B1 NET027 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM11 NET041 B2 NET058 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM17 NET086 C1 NET027 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM3 VDD A3 NET038 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM10 VDD B3 NET041 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM2 NET038 A2 NET084 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM22 Y NET027 GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM18 NET068 A3 NET068 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM21 NET068 B2 NET068 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM4 NET068 B1 NET015 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM1 NET015 C3 GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM8 NET027 A2 NET068 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM9 NET027 A3 NET068 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM6 NET068 B3 NET015 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM7 NET027 A1 NET068 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM15 NET015 C1 GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM5 NET068 B2 NET015 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM0 NET015 C2 GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+.ENDS OA333X2
+
+.SUBCKT OA333X1 A1 A2 A3 B1 B2 B3 C1 C2 C3 VDD GND Y
+MM20 VDD NET027 Y VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM19 NET058 B2 NET087 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM23 VDD A3 VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM13 VDD C3 NET040 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM14 NET084 A1 NET027 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM16 NET040 C2 NET086 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM12 NET087 B1 NET027 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM11 NET041 B2 NET058 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM17 NET086 C1 NET027 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM3 VDD A3 NET038 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM10 VDD B3 NET041 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM2 NET038 A2 NET084 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM22 Y NET027 GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM18 NET068 A3 NET068 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM21 NET068 B2 NET068 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM4 NET068 B1 NET015 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM1 NET015 C3 GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM8 NET027 A2 NET068 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM9 NET027 A3 NET068 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM6 NET068 B3 NET015 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM7 NET027 A1 NET068 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM15 NET015 C1 GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM5 NET068 B2 NET015 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM0 NET015 C2 GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+.ENDS OA333X1
+
+.subckt OAI21X1 gnd vdd A B Y C
+M0 a_9_54# A vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M1 Y B a_9_54# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M2 vdd C Y vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M3 gnd A a_2_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M4 a_2_6# B gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M5 Y C a_2_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+.ends OAI21X1
+
+.subckt OAI22X1 gnd vdd D C A B Y
+M0 a_9_54# A vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M1 Y B a_9_54# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M2 a_28_54# D Y vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M3 vdd C a_28_54# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M4 gnd A a_2_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M5 a_2_6# B gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M6 Y D a_2_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M7 a_2_6# C Y gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+.ends OAI22X1
+
+.SUBCKT OAI40X1 GND VDD D C A B Y
+M0 A_9_54# A VDD VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M1 Y B A_9_54# VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M2 A_28_54# D Y VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M3 VDD C A_28_54# VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M4 GND A A_2_6# GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M5 A_2_6# B GND GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M6 Y D A_2_6# GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M7 A_2_6# C Y GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M8 A_9_55# A VDD VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M9 Y B A_9_55# VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M10 A_28_55# D Y VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M11 VDD C A_28_55# VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M12 GND A A_2_7# GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M13 A_2_7# B GND GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M14 Y D A_2_7# GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M15 A_2_7# C Y GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M16 A_9_56# A VDD VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M17 Y B A_9_56# VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M18 A_28_56# D Y VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M19 VDD C A_28_56# VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M20 GND A A_2_8# GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M21 A_2_8# B GND GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M22 Y D A_2_8# GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M23 A_2_8# C Y GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M24 A_9_57# A VDD VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M25 Y B A_9_57# VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M26 A_28_57# D Y VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M27 VDD C A_28_57# VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M28 GND A A_2_9# GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M29 A_2_9# B GND GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M30 Y D A_2_9# GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M31 A_2_9# C Y GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M32 A_9_58# A VDD VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M33 Y B A_9_58# VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M34 A_28_58# D Y VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M35 VDD C A_28_58# VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M36 GND A A_2_10# GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M37 A_2_10# B GND GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M38 Y D A_2_10# GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M39 A_2_10# C Y GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+.ENDS OAI40X1
+
+.subckt OR2X1 Y B vdd gnd A
+M0 a_9_54# A a_2_54# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M1 vdd B a_9_54# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M2 Y a_2_54# vdd vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M3 a_2_54# A gnd gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M4 gnd B a_2_54# gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M5 Y a_2_54# gnd gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+.ends OR2X1
+
+.subckt OR2X2 Y B vdd gnd A
+M0 a_9_54# A a_2_54# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M1 vdd B a_9_54# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M2 Y a_2_54# vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M3 a_2_54# A gnd gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M4 gnd B a_2_54# gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M5 Y a_2_54# gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+.ends OR2X2
+
+.SUBCKT SDFLX1 CLK D QN SE SI VDD GND
+MM24 QN SH GND GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+MM23 CLKB CLKN GND GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+MM20 CLKN CLK GND GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+MM17 SH CLKB PD5 GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+MM16 PD5 SS GND GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+MM14 SS SH GND GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+MM12 MS CLKN SH GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+MM9 MH CLKN PD3 GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+MM8 PD3 MS GND GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+MM6 MS MH GND GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+MM5 PD1 SE NET0168 GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+MM4 MH CLKB PD1 GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+MM0 SEN SE GND GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+MM26 NET0168 SI GND GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+MM32 PD1 D NET0167 GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+MM29 NET0167 SEN GND GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+MM13 MS CLKB SH VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+MM11 PD2 MS VDD VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+MM1 MH CLKN PU1 VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+MM3 PU1 SI NET0144 VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+MM31 PU1 SE NET0144 VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+MM10 MH CLKB PD2 VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+MM2 SEN SE VDD VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+MM27 NET0144 SEN VDD VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+MM30 NET0144 D VDD VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+MM7 MS MH VDD VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+MM25 QN SH VDD VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+MM22 CLKB CLKN VDD VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+MM21 CLKN CLK VDD VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+MM19 PD4 SS VDD VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+MM18 SH CLKN PD4 VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+MM15 SS SH VDD VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+.ENDS SDFLX1
+
+.SUBCKT SDFHX1 CLK D QN SE SI VDD GND
+MM30 SEN SE GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM24 QN SH GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM4 MH CLKN NET048 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM23 CLKB CLKN GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM20 CLKN CLK GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM17 SH CLKN PD5 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM16 PD5 SS GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM14 SS SH GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM12 MS CLKB SH GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM9 MH CLKB PD3 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM8 PD3 MS GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM6 MS MH GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM28 NET0102 SEN GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM0 NET0101 SE GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM5 NET048 SI NET0101 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM29 NET048 D NET0102 GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM25 QN SH VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM22 CLKB CLKN VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM1 MH CLKB NET050 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM21 CLKN CLK VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM3 NET050 SE NET045 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM27 NET050 SI NET045 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM26 NET045 D VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM19 PD4 SS VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM18 SH CLKB PD4 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM2 NET045 SEN VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM15 SS SH VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM13 MS CLKN SH VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM11 PD2 MS VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM10 MH CLKN PD2 VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM7 MS MH VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+MM31 SEN SE VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U 
+.ENDS SDFHX1
+
+.SUBCKT SR_LATCH S R Q NQ VDD GND
+M0 VDD S A_2_6# VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M1 A_18_54# A_12_41# VDD VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M2 Q A_2_6# A_18_54# VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M3 A_35_54# S Q VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M4 VDD R A_35_54# VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M5 A_12_41# R VDD VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M6 VDD S A_2_6# VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M7 A_18_54# A_13_43# VDD VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M8 NQ A_2_6# A_18_54# VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M9 A_35_54# S NQ VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M10 VDD R A_35_54# VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M11 A_12_41# R VDD VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M12 VDD S A_2_6# VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M13 A_18_54# A_13_43# VDD VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M14 Q A_2_6# A_18_54# VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M15 A_35_54# S Q VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M16 VDD R A_35_54# VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M17 A_12_41# R VDD VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M18 VDD S A_2_6# VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M19 A_18_54# A_13_43# VDD VDD PMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M20 GND S A_2_6# GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M21 A_18_6# A_12_41# GND GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M22 Q S A_18_6# GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M23 A_35_6# A_2_6# Q GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M24 GND R A_35_6# GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M25 A_12_41# R GND GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M26 GND S A_2_6# GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M27 A_18_6# A_12_41# GND GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M28 NQ S A_18_6# GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M29 A_35_6# A_2_6# NQ GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M30 GND R A_35_6# GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M31 A_12_41# R GND GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M32 GND S A_2_6# GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M33 A_18_6# A_12_41# GND GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M34 Q S A_18_6# GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M35 A_35_6# A_2_6# Q GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M36 GND R A_35_6# GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+M37 A_12_41# R GND GND NMOS W=0.021U L=0.015U
++ AD=0P PD=0U AS=0P PS=0U 
+.ENDS SR_LATCH
+
+.subckt TBUFX1 vdd gnd EN A Y
+M0 a_9_6# EN vdd vdd pmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M1 a_26_54# a_9_6# Y vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M2 vdd A a_26_54# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M3 a_9_6# EN gnd gnd nmos w=0.25u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M4 a_26_6# EN Y gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M5 gnd A a_26_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+.ends TBUFX1
+
+.subckt TBUFX2 vdd gnd A EN Y
+M0 a_9_6# EN vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M1 Y a_9_6# a_18_54# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M2 a_18_54# a_9_6# Y vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M3 vdd A a_18_54# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M4 a_18_54# A vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M5 a_9_6# EN gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M6 Y EN a_18_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M7 a_18_6# EN Y gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M8 gnd A a_18_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M9 a_18_6# A gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+.ends TBUFX2
+
+.SUBCKT TBUFX36 VDD GND EN A Y
+M0 A_9_6# EN VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U
+M1 A_26_54# A_9_6# Y VDD PMOS W=1U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U
+M2 VDD A A_26_54# VDD PMOS W=1U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U
+M3 A_9_6# EN VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U
+M4 A_26_6# EN Y VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U
+M5 VDD A A_26_6# VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U
+M6 VDD EN A_9_6# VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U
+M7 A_9_6# A_26_54# Y VDD PMOS W=1U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U
+M8 A_26_54# A_9_6# Y VDD PMOS W=1U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U
+M9 VDD A A_26_54# VDD PMOS W=1U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U
+M10 A_26_54# A VDD VDD PMOS W=1U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U
+M11 VDD A A_18_54# VDD PMOS W=1U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U
+M12 A_18_54# EN VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U
+M13 A_18_54# A VDD VDD PMOS W=1U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U
+M14 A_18_54# A VDD VDD PMOS W=1U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U
+M15 VDD A A_18_54# VDD PMOS W=1U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U
+M16 A_9_6# EN VDD VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U
+M17 Y A_18_6# EN VDD PMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U
+M18 GND A A_18_6# GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U
+M19 A_18_6# EN GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U
+M20 Y EN A_18_6# GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U
+M21 A A_18_6# EN GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U
+M22 Y A_18_6# A GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U
+M23 A_18_6# A GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U
+M24 A_18_6# B Y GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U
+M25 A_18_6# EN GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U
+M26 Y A_18_6# G GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U
+M27 Y G A_18_6# GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U
+M28 D A_18_6# G GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U
+M29 A_18_6# F GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U
+M30 Y A_18_6# B GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U
+M31 A A1 A_18_6# GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U
+M32 Y A GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U
+M33 A B Y GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U
+M34 A_18_6# A Y GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U
+M35 Y A GND GND NMOS W=0.5U L=0.05U
++ AD=0P PD=0U AS=0P PS=0U
+.ENDS TBUFX36
+
+.subckt XNOR2X1 A B gnd vdd Y
+M0 vdd A a_2_6# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M1 a_18_54# a_12_41# vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M2 Y a_2_6# a_18_54# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M3 a_35_54# A Y vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M4 vdd B a_35_54# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M5 a_12_41# B vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M6 gnd A a_2_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M7 a_18_6# a_12_41# gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M8 Y A a_18_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M9 a_35_6# a_2_6# Y gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M10 gnd B a_35_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M11 a_12_41# B gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+.ends XNOR2X1
+
+.subckt XOR2X1 Y vdd B A gnd
+M0 vdd A a_2_6# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M1 a_18_54# a_13_43# vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M2 Y A a_18_54# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M3 a_35_54# a_2_6# Y vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M4 vdd B a_35_54# vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M5 a_13_43# B vdd vdd pmos w=1u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M6 gnd A a_2_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M7 a_18_6# a_13_43# gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M8 Y a_2_6# a_18_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M9 a_35_6# A Y gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M10 gnd B a_35_6# gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+M11 a_13_43# B gnd gnd nmos w=0.5u l=0.05u
++ ad=0p pd=0u as=0p ps=0u 
+.ends XOR2X1
+
+.subckt  RCA_ADDER A_0 B_0 A_1 B_1 A_2 B_2 A_3 B_3 A_$ B_4 A_5 B_5 CIN_0 VDD GND CIN_6 Sum_5 Sum_4 Sum_3 Sum_2 Sum_1 Sum0
+    M1 Abar_0 A_0 VDD VDD PMOS
+    M2 Abar_0 A_0 GND GND NMOS
+    M3 Bbar_0 B_0 VDD VDD PMOS
+    M4 Bbar_0 B_0 GND GND NMOS
+
+    M5 www_0 A_0 VDD VDD PMOS
+    M6 xxx_0 Abar_0 VDD VDD PMOS
+    M7 xorAB_0 B_0 xxx_0 VDD PMOS
+    M8 xorAB_0 Bbar_0 www_0 VDD PMOS
+
+    M9 xorAB_0 A_0 yyy_0 GND NMOS
+    M10 xorAB_0 Abar_0 zzz_0 GND NMOS
+    M11 yyy_0 B_0 GND GND NMOS
+    M12 zzz_0 Bbar_0 GND GND NMOS
+
+    M13 xorABbar_0 xorAB_0 VDD VDD PMOS
+    M14 xorABbar_0 xorAB_0 GND GND NMOS
+    M15 CINbar_0 CIN_0 VDD VDD PMOS
+    M16 CINbar_0 CIN_0 GND GND NMOS
+
+    M17 ppp_0 xorAB_0 VDD VDD PMOS
+    M18 qqq_0 xorABbar_0 VDD VDD PMOS
+    M19 Sum_0 CIN_0 qqq_0 VDD PMOS
+    M20 Sum_0 CINbar_0 ppp_0 VDD PMOS
+
+    M21 Sum_0 xorAB_0 rrr_0 GND NMOS
+    M22 Sum_0 xorABbar_0 sss_0 GND NMOS
+    M23 rrr_0 CIN_0 GND GND NMOS
+    M24 sss_0 CINbar_0 GND GND NMOS
+
+    M25 A.B_0 A_0 VDD VDD PMOS
+    M26 A.B_0 B_0 VDD VDD PMOS
+    M27 A.B_0 A_0 jjj_0 GND NMOS
+    M28 jjj_0 B_0 GND GND NMOS
+
+    M29 A_B.Cin_0 xorAB_0 VDD VDD PMOS
+    M30 A_B.Cin_0 CIN_0 VDD VDD PMOS
+    M31 A_B.Cin_0 xorAB_0 kkk_0 GND NMOS
+    M32 kkk_0 CIN_0 GND GND NMOS
+
+    M33 CIN_1 A.B_0 VDD VDD PMOS
+    M34 CIN_1 A_B.Cin_0 VDD VDD PMOS
+    M35 CIN_1 A.B_0 lll_0 GND NMOS
+    M36 lll_0 A_B.Cin_0 GND GND NMOS
+
+    M37 Abar_1 A_1 VDD VDD PMOS
+    M38 Abar_1 A_1 GND GND NMOS
+    M39 Bbar_1 B_1 VDD VDD PMOS
+    M40 Bbar_1 B_1 GND GND NMOS
+
+    M41 www_1 A_1 VDD VDD PMOS
+    M42 xxx_1 Abar_1 VDD VDD PMOS
+    M43 xorAB_1 B_1 xxx_1 VDD PMOS
+    M44 xorAB_1 Bbar_1 www_1 VDD PMOS
+
+    M45 xorAB_1 A_1 yyy_1 GND NMOS
+    M46 xorAB_1 Abar_1 zzz_1 GND NMOS
+    M47 yyy_1 B_1 GND GND NMOS
+    M48 zzz_1 Bbar_1 GND GND NMOS
+
+    M49 xorABbar_1 xorAB_1 VDD VDD PMOS
+    M50 xorABbar_1 xorAB_1 GND GND NMOS
+    M51 CINbar_1 CIN_1 VDD VDD PMOS
+    M52 CINbar_1 CIN_1 GND GND NMOS
+
+    M53 ppp_1 xorAB_1 VDD VDD PMOS
+    M54 qqq_1 xorABbar_1 VDD VDD PMOS
+    M55 Sum_1 CIN_1 qqq_1 VDD PMOS
+    M56 Sum_1 CINbar_1 ppp_1 VDD PMOS
+
+    M57 Sum_1 xorAB_1 rrr_1 GND NMOS
+    M58 Sum_1 xorABbar_1 sss_1 GND NMOS
+    M59 rrr_1 CIN_1 GND GND NMOS
+    M60 sss_1 CINbar_1 GND GND NMOS
+
+    M61 A.B_1 A_1 VDD VDD PMOS
+    M62 A.B_1 B_1 VDD VDD PMOS
+    M63 A.B_1 A_1 jjj_1 GND NMOS
+    M64 jjj_1 B_1 GND GND NMOS
+
+    M65 A_B.Cin_1 xorAB_1 VDD VDD PMOS
+    M66 A_B.Cin_1 CIN_1 VDD VDD PMOS
+    M67 A_B.Cin_1 xorAB_1 kkk_1 GND NMOS
+    M68 kkk_1 CIN_1 GND GND NMOS
+
+    M69 CIN_2 A.B_1 VDD VDD PMOS
+    M70 CIN_2 A_B.Cin_1 VDD VDD PMOS
+    M71 CIN_2 A.B_1 lll_1 GND NMOS
+    M72 lll_1 A_B.Cin_1 GND GND NMOS
+
+    M73 Abar_2 A_2 VDD VDD PMOS
+    M74 Abar_2 A_2 GND GND NMOS
+    M75 Bbar_2 B_2 VDD VDD PMOS
+    M76 Bbar_2 B_2 GND GND NMOS
+
+    M77 www_2 A_2 VDD VDD PMOS
+    M78 xxx_2 Abar_2 VDD VDD PMOS
+    M79 xorAB_2 B_2 xxx_2 VDD PMOS
+    M80 xorAB_2 Bbar_2 www_2 VDD PMOS
+
+    M81 xorAB_2 A_2 yyy_2 GND NMOS
+    M82 xorAB_2 Abar_2 zzz_2 GND NMOS
+    M83 yyy_2 B_2 GND GND NMOS
+    M84 zzz_2 Bbar_2 GND GND NMOS
+
+    M85 xorABbar_2 xorAB_2 VDD VDD PMOS
+    M86 xorABbar_2 xorAB_2 GND GND NMOS
+    M87 CINbar_2 CIN_2 VDD VDD PMOS
+    M88 CINbar_2 CIN_2 GND GND NMOS
+
+    M89 ppp_2 xorAB_2 VDD VDD PMOS
+    M90 qqq_2 xorABbar_2 VDD VDD PMOS
+    M91 Sum_2 CIN_2 qqq_2 VDD PMOS
+    M92 Sum_2 CINbar_2 ppp_2 VDD PMOS
+
+    M93 Sum_2 xorAB_2 rrr_2 GND NMOS
+    M94 Sum_2 xorABbar_2 sss_2 GND NMOS
+    M95 rrr_2 CIN_2 GND GND NMOS
+    M96 sss_2 CINbar_2 GND GND NMOS
+
+    M97 A.B_2 A_2 VDD VDD PMOS
+    M98 A.B_2 B_2 VDD VDD PMOS
+    M99 A.B_2 A_2 jjj_2 GND NMOS
+    M100 jjj_2 B_2 GND GND NMOS
+
+    M101 A_B.Cin_2 xorAB_2 VDD VDD PMOS
+    M102 A_B.Cin_2 CIN_2 VDD VDD PMOS
+    M103 A_B.Cin_2 xorAB_2 kkk_2 GND NMOS
+    M104 kkk_2 CIN_2 GND GND NMOS
+
+    M105 CIN_3 A.B_2 VDD VDD PMOS
+    M106 CIN_3 A_B.Cin_2 VDD VDD PMOS
+    M107 CIN_3 A.B_2 lll_2 GND NMOS
+    M108 lll_2 A_B.Cin_2 GND GND NMOS
+
+    M109 Abar_3 A_3 VDD VDD PMOS
+    M110 Abar_3 A_3 GND GND NMOS
+    M111 Bbar_3 B_3 VDD VDD PMOS
+    M112 Bbar_3 B_3 GND GND NMOS
+
+    M113 www_3 A_3 VDD VDD PMOS
+    M114 xxx_3 Abar_3 VDD VDD PMOS
+    M115 xorAB_3 B_3 xxx_3 VDD PMOS
+    M116 xorAB_3 Bbar_3 www_3 VDD PMOS
+
+    M117 xorAB_3 A_3 yyy_3 GND NMOS
+    M118 xorAB_3 Abar_3 zzz_3 GND NMOS
+    M119 yyy_3 B_3 GND GND NMOS
+    M120 zzz_3 Bbar_3 GND GND NMOS
+
+    M121 xorABbar_3 xorAB_3 VDD VDD PMOS
+    M122 xorABbar_3 xorAB_3 GND GND NMOS
+    M123 CINbar_3 CIN_3 VDD VDD PMOS
+    M124 CINbar_3 CIN_3 GND GND NMOS
+
+    M125 ppp_3 xorAB_3 VDD VDD PMOS
+    M126 qqq_3 xorABbar_3 VDD VDD PMOS
+    M127 Sum_3 CIN_3 qqq_3 VDD PMOS
+    M128 Sum_3 CINbar_3 ppp_3 VDD PMOS
+
+    M129 Sum_3 xorAB_3 rrr_3 GND NMOS
+    M130 Sum_3 xorABbar_3 sss_3 GND NMOS
+    M131 rrr_3 CIN_3 GND GND NMOS
+    M132 sss_3 CINbar_3 GND GND NMOS
+
+    M133 A.B_3 A_3 VDD VDD PMOS
+    M134 A.B_3 B_3 VDD VDD PMOS
+    M135 A.B_3 A_3 jjj_3 GND NMOS
+    M136 jjj_3 B_3 GND GND NMOS
+
+    M137 A_B.Cin_3 xorAB_3 VDD VDD PMOS
+    M138 A_B.Cin_3 CIN_3 VDD VDD PMOS
+    M139 A_B.Cin_3 xorAB_3 kkk_3 GND NMOS
+    M140 kkk_3 CIN_3 GND GND NMOS
+
+    M141 CIN_4 A.B_3 VDD VDD PMOS
+    M142 CIN_4 A_B.Cin_3 VDD VDD PMOS
+    M143 CIN_4 A.B_3 lll_3 GND NMOS
+    M144 lll_3 A_B.Cin_3 GND GND NMOS
+
+    M145 Abar_4 A_4 VDD VDD PMOS
+    M146 Abar_4 A_4 GND GND NMOS
+    M147 Bbar_4 B_4 VDD VDD PMOS
+    M148 Bbar_4 B_4 GND GND NMOS
+
+    M149 www_4 A_4 VDD VDD PMOS
+    M150 xxx_4 Abar_4 VDD VDD PMOS
+    M151 xorAB_4 B_4 xxx_4 VDD PMOS
+    M152 xorAB_4 Bbar_4 www_4 VDD PMOS
+
+    M153 xorAB_4 A_4 yyy_4 GND NMOS
+    M154 xorAB_4 Abar_4 zzz_4 GND NMOS
+    M155 yyy_4 B_4 GND GND NMOS
+    M156 zzz_4 Bbar_4 GND GND NMOS
+
+    M157 xorABbar_4 xorAB_4 VDD VDD PMOS
+    M158 xorABbar_4 xorAB_4 GND GND NMOS
+    M159 CINbar_4 CIN_4 VDD VDD PMOS
+    M160 CINbar_4 CIN_4 GND GND NMOS
+
+    M161 ppp_4 xorAB_4 VDD VDD PMOS
+    M162 qqq_4 xorABbar_4 VDD VDD PMOS
+    M163 Sum_4 CIN_4 qqq_4 VDD PMOS
+    M164 Sum_4 CINbar_4 ppp_4 VDD PMOS
+
+    M165 Sum_4 xorAB_4 rrr_4 GND NMOS
+    M166 Sum_4 xorABbar_4 sss_4 GND NMOS
+    M167 rrr_4 CIN_4 GND GND NMOS
+    M168 sss_4 CINbar_4 GND GND NMOS
+
+    M169 A.B_4 A_4 VDD VDD PMOS
+    M170 A.B_4 B_4 VDD VDD PMOS
+    M171 A.B_4 A_4 jjj_4 GND NMOS
+    M172 jjj_4 B_4 GND GND NMOS
+
+    M173 A_B.Cin_4 xorAB_4 VDD VDD PMOS
+    M174 A_B.Cin_4 CIN_4 VDD VDD PMOS
+    M175 A_B.Cin_4 xorAB_4 kkk_4 GND NMOS
+    M176 kkk_4 CIN_4 GND GND NMOS
+
+    M177 CIN_5 A.B_4 VDD VDD PMOS
+    M178 CIN_5 A_B.Cin_4 VDD VDD PMOS
+    M179 CIN_5 A.B_4 lll_4 GND NMOS
+    M180 lll_4 A_B.Cin_4 GND GND NMOS
+
+    M181 Abar_5 A_5 VDD VDD PMOS
+    M182 Abar_5 A_5 GND GND NMOS
+    M183 Bbar_5 B_5 VDD VDD PMOS
+    M184 Bbar_5 B_5 GND GND NMOS
+
+    M185 www_5 A_5 VDD VDD PMOS
+    M186 xxx_5 Abar_5 VDD VDD PMOS
+    M187 xorAB_5 B_5 xxx_5 VDD PMOS
+    M188 xorAB_5 Bbar_5 www_5 VDD PMOS
+
+    M189 xorAB_5 A_5 yyy_5 GND NMOS
+    M190 xorAB_5 Abar_5 zzz_5 GND NMOS
+    M191 yyy_5 B_5 GND GND NMOS
+    M192 zzz_5 Bbar_5 GND GND NMOS
+
+    M193 xorABbar_5 xorAB_5 VDD VDD PMOS
+    M194 xorABbar_5 xorAB_5 GND GND NMOS
+    M195 CINbar_5 CIN_5 VDD VDD PMOS
+    M196 CINbar_5 CIN_5 GND GND NMOS
+
+    M197 ppp_5 xorAB_5 VDD VDD PMOS
+    M198 qqq_5 xorABbar_5 VDD VDD PMOS
+    M199 Sum_5 CIN_5 qqq_5 VDD PMOS
+    M200 Sum_5 CINbar_5 ppp_5 VDD PMOS
+
+    M201 Sum_5 xorAB_5 rrr_5 GND NMOS
+    M202 Sum_5 xorABbar_5 sss_5 GND NMOS
+    M203 rrr_5 CIN_5 GND GND NMOS
+    M204 sss_5 CINbar_5 GND GND NMOS
+
+    M205 A.B_5 A_5 VDD VDD PMOS
+    M206 A.B_5 B_5 VDD VDD PMOS
+    M207 A.B_5 A_5 jjj_5 GND NMOS
+    M208 jjj_5 B_5 GND GND NMOS
+
+    M209 A_B.Cin_5 xorAB_5 VDD VDD PMOS
+    M210 A_B.Cin_5 CIN_5 VDD VDD PMOS
+    M211 A_B.Cin_5 xorAB_5 kkk_5 GND NMOS
+    M212 kkk_5 CIN_5 GND GND NMOS
+
+    M213 CIN_6 A.B_5 VDD VDD PMOS
+    M214 CIN_6 A_B.Cin_5 VDD VDD PMOS
+    M215 CIN_6 A.B_5 lll_5 GND NMOS
+    M216 lll_5 A_B.Cin_5 GND GND NMOS
+.ends RCA_ADDER

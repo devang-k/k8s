@@ -1,0 +1,4592 @@
+{
+    "FileContent": [
+        {
+            "supportsVariations": false,
+            "uiVisible": true,
+            "parameterSupport": false,
+            "name": "layer_map",
+            "displayName": "Layer Map",
+            "header": [
+                "Layer",
+                "Layer Number",
+                "Data Type"
+            ],
+            "data": [
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "cell_boundary"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "Cell boundary"
+                    },
+                    "unit": null,
+                    "description": "Cell boundary",
+                    "type": 2,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        1,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "ndiff"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "ndiff"
+                    },
+                    "unit": null,
+                    "description": "n-type nanosheet",
+                    "type": 2,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        100,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "pdiff"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "pdiff"
+                    },
+                    "unit": null,
+                    "description": "p-type nanosheet",
+                    "type": 2,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        101,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "npoly"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "npoly"
+                    },
+                    "unit": null,
+                    "description": "gate(poly) for nmos",
+                    "type": 2,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        102,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "ppoly"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "ppoly"
+                    },
+                    "unit": null,
+                    "description": "gate(poly) for pmos",
+                    "type": 2,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        103,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "ndiffcon"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "ndiffcon"
+                    },
+                    "unit": null,
+                    "description": "ndiffusion interconnect",
+                    "type": 2,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        104,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": true,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "pdiffcon"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "pdiffcon"
+                    },
+                    "unit": null,
+                    "description": "pdiffusion interconnect",
+                    "type": 2,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        105,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "pviag"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "pviag"
+                    },
+                    "unit": null,
+                    "description": "ppoly to Metal0",
+                    "type": 2,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        106,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "nviag"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "nviag"
+                    },
+                    "unit": null,
+                    "description": "npoly to Metal0",
+                    "type": 2,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        107,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "pviat"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "pviat"
+                    },
+                    "unit": null,
+                    "description": "pdiffusion to Metal0",
+                    "type": 2,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        108,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "nviat"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "nviat"
+                    },
+                    "unit": null,
+                    "description": "ndiffusion to Metal0",
+                    "type": 2,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        109,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "bspdn_pmos_via"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "bspdn_pmos_via"
+                    },
+                    "unit": null,
+                    "description": "In CFET only,pdiffusion to power rail",
+                    "type": 2,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        110,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "pdiff_dvb"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "pdiff dvb"
+                    },
+                    "unit": null,
+                    "description": "Deep via boundary connects pdiffusion to power rail",
+                    "type": 2,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        111,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "ndiff_dvb"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "ndiff dvb"
+                    },
+                    "unit": null,
+                    "description": "Deep via boundary connects ndiffusion to power rail",
+                    "type": 2,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        111,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "nwell"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "nwell"
+                    },
+                    "unit": null,
+                    "description": "In FinFET only, N type well",
+                    "type": 2,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        120,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "dummy_gate"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "Dummy gate"
+                    },
+                    "unit": null,
+                    "description": "Ends the cell in X direction",
+                    "type": 2,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        121,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "gate_isolation"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "Gate isolation"
+                    },
+                    "unit": null,
+                    "description": "In CFET only, gate isolation for split gates",
+                    "type": 2,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        122,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "diff_interconnect"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "Diff interconnect"
+                    },
+                    "unit": null,
+                    "description": "In CFET only, pdiffusion and ndiffusion interconnect via",
+                    "type": 2,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        123,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "metal0"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "M0"
+                    },
+                    "unit": null,
+                    "description": "Metal0 (horizontal routing)",
+                    "type": 2,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        200,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "metal0_label"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "M0 label"
+                    },
+                    "unit": null,
+                    "description": "Metal0 label (horizontal routing)",
+                    "type": 2,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        200,
+                        1
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "metal0_pin"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "M0 pin"
+                    },
+                    "unit": null,
+                    "description": "Metal0 pin",
+                    "type": 2,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        200,
+                        2
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "metal0_pin_label"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "M0 pin label"
+                    },
+                    "unit": null,
+                    "description": "Metal0 pin label",
+                    "type": 2,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        200,
+                        3
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "via0"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "via0"
+                    },
+                    "unit": null,
+                    "description": "Metal0 and Metal1 interconnect via",
+                    "type": 2,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        201,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "metal1"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "M1"
+                    },
+                    "unit": null,
+                    "description": "Metal1 (vertical routing)",
+                    "type": 2,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        202,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "metal1_label"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "M1 label"
+                    },
+                    "unit": null,
+                    "description": "Metal1 label (vertical routing)",
+                    "type": 2,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        202,
+                        1
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "metal1_pin"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "M1 pin"
+                    },
+                    "unit": null,
+                    "description": "Metal1 pin",
+                    "type": 2,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        202,
+                        2
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "metal1_pin_label"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "M1 pin label"
+                    },
+                    "unit": null,
+                    "description": "Metal1 pin label",
+                    "type": 2,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        202,
+                        3
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "metal0_track_guide"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "M0 track guide"
+                    },
+                    "unit": null,
+                    "description": "Horizontal Metal0 tracks",
+                    "type": 2,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        220,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "metal1_track_guide"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "M1 track guide"
+                    },
+                    "unit": null,
+                    "description": "Vertical Metal1 tracks",
+                    "type": 2,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        221,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "back_metal0"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "BM0"
+                    },
+                    "unit": null,
+                    "description": "Back side power rail",
+                    "type": 2,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        300,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "back_metal0_label"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "BM0 label"
+                    },
+                    "unit": null,
+                    "description": "Back side power rail label",
+                    "type": 2,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        300,
+                        1
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "back_metal0_pin"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "BM0 pin"
+                    },
+                    "unit": null,
+                    "description": "Back side power rail pin",
+                    "type": 2,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        300,
+                        2
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "back_metal0_pin_label"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "BM0 pin label"
+                    },
+                    "unit": null,
+                    "description": "Back side power rail pin label",
+                    "type": 2,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        300,
+                        3
+                    ],
+                    "isSelected": false
+                }
+            ]
+        },
+        {
+            "supportsVariations": true,
+            "uiVisible": true,
+            "parameterSupport": true,
+            "name": "tech_constaints",
+            "displayName": "Technology & Design Constraints",
+            "header": null,
+            "data": [
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "technology"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "Technology"
+                    },
+                    "unit": null,
+                    "description": "Type of technology",
+                    "type": 3,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": [
+                        "cfet",
+                        "gaa",
+                        "finfet"
+                    ],
+                    "displayNameOptions": [
+                        "CFET",
+                        "GAA",
+                        "FinFET"
+                    ],
+                    "optionsDescription": [
+                        "Select cfet technology",
+                        "Select gaa technology",
+                        "Select finFET technology"
+                    ],
+                    "val": "gaa",
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "backside_power_rail"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "Power Distribution"
+                    },
+                    "unit": null,
+                    "description": "Option for Topside and Backside Power",
+                    "type": 3,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": [
+                        "Backside power",
+                        "Frontside power"
+                    ],
+                    "displayNameOptions": [
+                        "Backside power",
+                        "Frontside power"
+                    ],
+                    "optionsDescription": [
+                        "Routing tracks present over the power rail",
+                        "Routing tracks not present over the power rail"
+                    ],
+                    "val": false,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "routing_capability"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "Routing Capability"
+                    },
+                    "unit": null,
+                    "description": "Routing in Single Metal or with Two Metals",
+                    "type": 3,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": [
+                        "Single Metal Solution",
+                        "Two Metal Solution"
+                    ],
+                    "displayNameOptions": [
+                        "Single Metal Solution",
+                        "Two Metal Solution"
+                    ],
+                    "optionsDescription": [
+                        "Routing done in single metal M0(horizontal)",
+                        "Routing may utilize second metal(metal1, vertical) if first metal (metal0) resources are exhausted or if placement & routing track combination requires vertical routing"
+                    ],
+                    "val": "Two Metal Solution",
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "flipped"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "Orientation"
+                    },
+                    "unit": null,
+                    "description": "To flip the layout",
+                    "type": 3,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": [
+                        "R0",
+                        "Mx",
+                        "My"
+                    ],
+                    "displayNameOptions": [
+                        "R0 ( No flip)",
+                        "Mx ( Flip along X axis)",
+                        "My ( Flip along Y axis)"
+                    ],
+                    "optionsDescription": [
+                        "Default - No flip",
+                        "Layout flipped along X axis",
+                        "Layout flipped along Y axis"
+                    ],
+                    "val": "R0",
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": false,
+                    "key": {
+                        "key1": "half_dr"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "Half DR Compliance"
+                    },
+                    "unit": null,
+                    "description": "Switch for Half DR compliance",
+                    "type": 5,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": [
+                        true,
+                        false
+                    ],
+                    "displayNameOptions": [
+                        "true",
+                        "false"
+                    ],
+                    "optionsDescription": [
+                        "Generates half DR compliant layouts",
+                        "Generates half DR non-compliant layouts"
+                    ],
+                    "val": true,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "height_req"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "Multiheight"
+                    },
+                    "unit": null,
+                    "description": "Controls height of mult-height cell",
+                    "type": 3,
+                    "parameterHidingRule": [
+                        [
+                            {
+                                "key1": "technology",
+                                "keyValue": "cfet"
+                            }
+                        ],
+                        [
+                            {
+                                "key1": "technology",
+                                "keyValue": "finfet"
+                            }
+                        ],
+                        [
+                            {
+                                "key1": "backside_power_rail",
+                                "keyValue": "Backside power"
+                            }
+                        ],
+                        [
+                            {
+                                "key1": "routing_capability",
+                                "keyValue": "Single Metal Solution"
+                            }
+                        ]
+                    ],
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": true,
+                    "stepper": 0.5,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": [
+                        "Single Height",
+                        "Double Height"
+                    ],
+                    "displayNameOptions": [
+                        "Single Height",
+                        "Double Height"
+                    ],
+                    "optionsDescription": null,
+                    "val": 1,
+                    "isSelected": false
+                }
+            ]
+        },
+        {
+            "supportsVariations": true,
+            "uiVisible": true,
+            "parameterSupport": true,
+            "name": "other",
+            "displayName": "Design Rules",
+            "header": null,
+            "data": [
+                {
+                    "supportsVariations": true,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "number_of_routing_tracks"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "Number of routing tracks"
+                    },
+                    "unit": null,
+                    "description": "Number of routing tracks per cell",
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": 1.0,
+                    "defaultStartValue": 2,
+                    "defaultEndValue": 7,
+                    "minStart": 2,
+                    "maxStart": 98,
+                    "minEnd": 3,
+                    "maxEnd": 99,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 6,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": true,
+                    "uiVisible": false,
+                    "key": {
+                        "key1": "placer"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "Placer"
+                    },
+                    "unit": null,
+                    "description": "Horizontal Distance between ppoly/npoly and pdiffcon/ndiffcon",
+                    "type": 3,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": [
+                        "base0",
+                        "base1"
+                    ],
+                    "displayNameOptions": [
+                        "base0",
+                        "base1"
+                    ],
+                    "optionsDescription": [
+                        "Uses base0 placement algorithm",
+                        "Uses base1 placement algorithm"
+                    ],
+                    "val": "base0",
+                    "isSelected": true
+                },
+                {
+                    "supportsVariations": true,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "nanosheet_width"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "Diffusion width"
+                    },
+                    "unit": "nm",
+                    "description": "Width of Diffusion/Nanosheet",
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": true,
+                    "stepper": 0.5,
+                    "defaultStartValue": 15,
+                    "defaultEndValue": 40,
+                    "minStart": 15,
+                    "maxStart": 39,
+                    "minEnd": 16,
+                    "maxEnd": 40,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 21,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": true,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "m0_pitch"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "Metal0 routing pitch"
+                    },
+                    "unit": "nm",
+                    "description": "Routing pitch for horizontal metal( Metal0)",
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": true,
+                    "stepper": 0.5,
+                    "defaultStartValue": 20,
+                    "defaultEndValue": 30,
+                    "minStart": 20,
+                    "maxStart": 29,
+                    "minEnd": 21,
+                    "maxEnd": 30,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 25,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": true,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "vertical_metal_pitch"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "Metal1 routing pitch"
+                    },
+                    "unit": "nm",
+                    "description": "For Two metal solution, routing pitch for vertical metal (Metal1,null,null,null,null,null,null,null,null)",
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": true,
+                    "stepper": 0.5,
+                    "defaultStartValue": 20,
+                    "defaultEndValue": 48,
+                    "minStart": 20,
+                    "maxStart": 47,
+                    "minEnd": 21,
+                    "maxEnd": 48,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 30,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": true,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "power_rail_width"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "Power rail width"
+                    },
+                    "unit": "nm",
+                    "description": "Width of back metal power rail",
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": true,
+                    "stepper": 0.5,
+                    "defaultStartValue": 20,
+                    "defaultEndValue": 50,
+                    "minStart": 20,
+                    "maxStart": 49,
+                    "minEnd": 21,
+                    "maxEnd": 50,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 37.5,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": true,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "np_spacing"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "N/P Diffusion spacing"
+                    },
+                    "unit": "nm",
+                    "description": "In GAA and FinFET only, the distance between pdiff and ndiff",
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": true,
+                    "stepper": 0.5,
+                    "defaultStartValue": 30,
+                    "defaultEndValue": 50,
+                    "minStart": 30,
+                    "maxStart": 49,
+                    "minEnd": 31,
+                    "maxEnd": 50,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 50,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": true,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "inner_space_width"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "Poly to Diffcon spacing"
+                    },
+                    "unit": "nm",
+                    "description": "Horizontal Distance between ppoly/npoly and pdiffcon/ndiffcon",
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": true,
+                    "stepper": 0.5,
+                    "defaultStartValue": 3,
+                    "defaultEndValue": 8,
+                    "minStart": 3,
+                    "maxStart": 7,
+                    "minEnd": 4,
+                    "maxEnd": 8,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 6,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": true,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "vertical_gate_spacing"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "Gate Cut spacing"
+                    },
+                    "unit": "nm",
+                    "description": "In GAA & FinFET only, end to end spacing between ppoly and npoly",
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": true,
+                    "stepper": 0.5,
+                    "defaultStartValue": 5,
+                    "defaultEndValue": 15,
+                    "minStart": 5,
+                    "maxStart": 14,
+                    "minEnd": 6,
+                    "maxEnd": 15,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 10,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": true,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "vertical_interconnect_spacing"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "Diffcon ETE spacing"
+                    },
+                    "unit": "nm",
+                    "description": "For GAA and FinFET only, end to end spacing between pdiffcon and ndiffcon",
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": true,
+                    "stepper": 0.5,
+                    "defaultStartValue": 10,
+                    "defaultEndValue": 25,
+                    "minStart": 10,
+                    "maxStart": 24,
+                    "minEnd": 11,
+                    "maxEnd": 25,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 20,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": true,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "pg_signal_spacing"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "PG rails to Signal spacing"
+                    },
+                    "unit": "nm",
+                    "description": "For Frontside Power, distance between power/ground and signals for Metal0",
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": true,
+                    "stepper": 0.5,
+                    "defaultStartValue": 5,
+                    "defaultEndValue": 15,
+                    "minStart": 5,
+                    "maxStart": 14,
+                    "minEnd": 6,
+                    "maxEnd": 15,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 10,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": true,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "gate_extension"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "Gate extension"
+                    },
+                    "unit": "nm",
+                    "description": "Extension of poly layer from diffusion(nanosheet)",
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": true,
+                    "stepper": 0.5,
+                    "defaultStartValue": 8,
+                    "defaultEndValue": 20,
+                    "minStart": 8,
+                    "maxStart": 19,
+                    "minEnd": 9,
+                    "maxEnd": 20,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 15,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": true,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "interconnect_extension"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "Diffcon extension"
+                    },
+                    "unit": "nm",
+                    "description": "Extension of Diffcon layer from diffusion(nanosheet)",
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": true,
+                    "stepper": 0.5,
+                    "defaultStartValue": 9,
+                    "defaultEndValue": 10,
+                    "minStart": 0,
+                    "maxStart": 9,
+                    "minEnd": 10,
+                    "maxEnd": 10,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 0,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": true,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "via_extension"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "Via extension"
+                    },
+                    "unit": "nm",
+                    "description": "Used to change the all vias(except dvb, Diff Interconnect) size in both X and Y direction simultaneously",
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": true,
+                    "stepper": 0.5,
+                    "defaultStartValue": 0,
+                    "defaultEndValue": 3,
+                    "minStart": 0,
+                    "maxStart": 2,
+                    "minEnd": 1,
+                    "maxEnd": 3,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 2.5,
+                    "isSelected": false
+                }
+            ]
+        },
+        {
+            "supportsVariations": true,
+            "uiVisible": true,
+            "parameterSupport": true,
+            "name": "layer_width",
+            "displayName": "Width and Pitch Rules",
+            "header": null,
+            "data": [
+                {
+                    "supportsVariations": true,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "npoly"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "N-poly width"
+                    },
+                    "unit": "nm",
+                    "description": "Transistor gate length of nFET is changed",
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": true,
+                    "stepper": 0.5,
+                    "defaultStartValue": 3,
+                    "defaultEndValue": 20,
+                    "minStart": 3,
+                    "maxStart": 19,
+                    "minEnd": 4,
+                    "maxEnd": 20,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 15,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": true,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "ppoly"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "P-poly width"
+                    },
+                    "unit": "nm",
+                    "description": "Transistor gate length of pFET is changed",
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": true,
+                    "stepper": 0.5,
+                    "defaultStartValue": 3,
+                    "defaultEndValue": 20,
+                    "minStart": 3,
+                    "maxStart": 19,
+                    "minEnd": 4,
+                    "maxEnd": 20,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 15,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": true,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "ndiffcon"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "N-diffcon width"
+                    },
+                    "unit": "nm",
+                    "description": "Changes cell width",
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": true,
+                    "stepper": 0.5,
+                    "defaultStartValue": 8,
+                    "defaultEndValue": 20,
+                    "minStart": 8,
+                    "maxStart": 19,
+                    "minEnd": 9,
+                    "maxEnd": 20,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 18,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": true,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "pdiffcon"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "P-diffcon width"
+                    },
+                    "unit": "nm",
+                    "description": "Changes cell width",
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": true,
+                    "stepper": 0.5,
+                    "defaultStartValue": 8,
+                    "defaultEndValue": 20,
+                    "minStart": 8,
+                    "maxStart": 19,
+                    "minEnd": 9,
+                    "maxEnd": 20,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 18,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": true,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "metal0"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "M0 width"
+                    },
+                    "unit": "nm",
+                    "description": "Width of Metal0 Wire (Y direction)",
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": true,
+                    "stepper": 0.5,
+                    "defaultStartValue": 8,
+                    "defaultEndValue": 15,
+                    "minStart": 8,
+                    "maxStart": 14,
+                    "minEnd": 9,
+                    "maxEnd": 15,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 12,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": true,
+                    "uiVisible": false,
+                    "key": {
+                        "key1": "metal0_track_guide"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "M0 track guide"
+                    },
+                    "unit": "nm",
+                    "description": "Width of Metal0 tracks (Y direction) for visualization for foundry users",
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": true,
+                    "stepper": 0.5,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 12.5,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": true,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "metal1"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "M1 width"
+                    },
+                    "unit": "nm",
+                    "description": "Width of Metal1 Wire (X direction)",
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": true,
+                    "stepper": 0.5,
+                    "defaultStartValue": 8,
+                    "defaultEndValue": 28,
+                    "minStart": 8,
+                    "maxStart": 27,
+                    "minEnd": 9,
+                    "maxEnd": 28,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 12,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": true,
+                    "uiVisible": false,
+                    "key": {
+                        "key1": "metal1_track_guide"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "M1 track guide"
+                    },
+                    "unit": "nm",
+                    "description": "Width of Metal1 tracks (X direction) for visualization for foundry users",
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": true,
+                    "stepper": 0.5,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 12.5,
+                    "isSelected": false
+                }
+            ]
+        },
+        {
+            "supportsVariations": true,
+            "uiVisible": true,
+            "parameterSupport": true,
+            "name": "min_spacing",
+            "displayName": "Spacing Rules",
+            "header": null,
+            "data": [
+                {
+                    "supportsVariations": true,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "nanosheet",
+                        "key2": "diff_interconnect"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "Diffusion to Diff interconnect spacing",
+                        "displayNameKey2": "Diffusion to Diff interconnect spacing"
+                    },
+                    "unit": "nm",
+                    "description": "In CFET only, Minimum spacing between Diffusion and Diff interconnect",
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": true,
+                    "stepper": 0.5,
+                    "defaultStartValue": 10,
+                    "defaultEndValue": 25,
+                    "minStart": 10,
+                    "maxStart": 24,
+                    "minEnd": 11,
+                    "maxEnd": 25,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 15,
+                    "isSelected": false
+                }
+            ]
+        },
+        {
+            "supportsVariations": false,
+            "uiVisible": false,
+            "parameterSupport": false,
+            "name": "hinder",
+            "displayName": null,
+            "header": null,
+            "data": [
+                {
+                    "supportsVariations": false,
+                    "uiVisible": false,
+                    "key": {
+                        "key1": "ndiffcon"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "ndiffcon"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 3,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": "pdiffcon",
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": false,
+                    "key": {
+                        "key1": "npoly"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "npoly"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 3,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": "ppoly",
+                    "isSelected": false
+                }
+            ]
+        },
+        {
+            "supportsVariations": false,
+            "uiVisible": false,
+            "parameterSupport": false,
+            "name": "configs",
+            "displayName": null,
+            "header": null,
+            "data": [
+                {
+                    "supportsVariations": false,
+                    "uiVisible": false,
+                    "key": {
+                        "key1": "scaling_factor"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "scaling_factor"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 4,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": false,
+                    "key": {
+                        "key1": "db_unit"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "db_unit"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 1e-09,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": false,
+                    "key": {
+                        "key1": "cell_width"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "cell_width"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 45,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": false,
+                    "key": {
+                        "key1": "cell_height"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "cell_height"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 150,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": false,
+                    "key": {
+                        "key1": "my_unused2"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "my_unused2"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 2,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        602,
+                        0
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": false,
+                    "key": {
+                        "key1": "my_diffusionlayer"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "my_diffusionlayer"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 2,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        350,
+                        0
+                    ],
+                    "isSelected": false
+                }
+            ]
+        },
+        {
+            "supportsVariations": false,
+            "uiVisible": false,
+            "parameterSupport": false,
+            "name": "routing_layers",
+            "displayName": null,
+            "header": null,
+            "data": [
+                {
+                    "supportsVariations": false,
+                    "uiVisible": false,
+                    "key": {
+                        "key1": "ndiffcon"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "ndiffcon"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 3,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": "v",
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": false,
+                    "key": {
+                        "key1": "pdiffcon"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "pdiffcon"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 3,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": "v",
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": false,
+                    "key": {
+                        "key1": "poly"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "poly"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 3,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": "v",
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": false,
+                    "key": {
+                        "key1": "npoly"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "npoly"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 3,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": "v",
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": false,
+                    "key": {
+                        "key1": "ppoly"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "ppoly"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 3,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": "v",
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": false,
+                    "key": {
+                        "key1": "metal0"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "metal0"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 3,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": "h",
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": false,
+                    "key": {
+                        "key1": "back_metal0"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "back_metal0"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 3,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": "h",
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": false,
+                    "key": {
+                        "key1": "nanosheet"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "nanosheet"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 3,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": "h",
+                    "isSelected": false
+                }
+            ]
+        },
+        {
+            "supportsVariations": false,
+            "uiVisible": false,
+            "parameterSupport": false,
+            "name": "via_size",
+            "displayName": null,
+            "header": null,
+            "data": [
+                {
+                    "supportsVariations": false,
+                    "uiVisible": false,
+                    "key": {
+                        "key1": "pviag"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "pviag"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 23,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": false,
+                    "key": {
+                        "key1": "pdiff_dvb"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "pdiff_dvb"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 18,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": false,
+                    "key": {
+                        "key1": "ndiff_dvb"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "ndiff_dvb"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 18,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": false,
+                    "key": {
+                        "key1": "pviat"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "pviat"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 15,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": false,
+                    "key": {
+                        "key1": "diff_interconnect"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "diff_interconnect"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 15,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": false,
+                    "key": {
+                        "key1": "nviat"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "nviat"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 15,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": false,
+                    "key": {
+                        "key1": "nviag"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "nviag"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 23,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": false,
+                    "key": {
+                        "key1": "via0"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "via0"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 12.5,
+                    "isSelected": false
+                }
+            ]
+        },
+        {
+            "supportsVariations": false,
+            "uiVisible": false,
+            "parameterSupport": false,
+            "name": "minimum_enclosure",
+            "displayName": null,
+            "header": null,
+            "data": [
+                {
+                    "supportsVariations": true,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "ndiffcon",
+                        "key2": "pviag"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "ndiffcon",
+                        "displayNameKey2": "pviag"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 0,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": true,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "pdiffcon",
+                        "key2": "pviag"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "pdiffcon",
+                        "displayNameKey2": "pviag"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 0,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": true,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "metal0",
+                        "key2": "pviat"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "metal0",
+                        "displayNameKey2": "pviat"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 0,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": true,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "metal0",
+                        "key2": "pviag"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "metal0",
+                        "displayNameKey2": "pviag"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 0,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": true,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "back_metal0",
+                        "key2": "ndiff_dvb"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "back_metal0",
+                        "displayNameKey2": "ndiff_dvb"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 0,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": true,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "nanosheet",
+                        "key2": "pviag"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "nanosheet",
+                        "displayNameKey2": "pviag"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 0,
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": true,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "poly",
+                        "key2": "pviat"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "poly",
+                        "displayNameKey2": "pviat"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 1,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": 0,
+                    "isSelected": false
+                }
+            ]
+        },
+        {
+            "supportsVariations": false,
+            "uiVisible": false,
+            "parameterSupport": false,
+            "name": "layer_properties",
+            "displayName": null,
+            "header": null,
+            "data": [
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "800"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "800"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 7,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        {
+                            "key": "name",
+                            "val": "M2_BACKSIDE_POWER_LINES",
+                            "type": 3,
+                            "isEditable": false
+                        },
+                        {
+                            "key": "layer",
+                            "val": "800",
+                            "type": 1,
+                            "isEditable": false
+                        },
+                        {
+                            "key": "color",
+                            "val": "#FD68B3",
+                            "type": 6,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "opacity",
+                            "val": 1,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "offset",
+                            "val": 0,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "height",
+                            "val": 5,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "shape",
+                            "val": "box",
+                            "type": 8,
+                            "options": [
+                                "box",
+                                "diamond",
+                                "nanosheet"
+                            ],
+                            "isEditable": true
+                        }
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "404"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "404"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 7,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        {
+                            "key": "name",
+                            "val": "VIA_FROM_INTERCONNECT_TO_BACKSIDE_POWER_TSVBAR",
+                            "type": 3,
+                            "isEditable": false
+                        },
+                        {
+                            "key": "layer",
+                            "val": "404",
+                            "type": 1,
+                            "isEditable": false
+                        },
+                        {
+                            "key": "color",
+                            "val": "#FF0000",
+                            "type": 6,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "opacity",
+                            "val": 1,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "offset",
+                            "val": 4,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "height",
+                            "val": 12,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "shape",
+                            "val": "box",
+                            "type": 8,
+                            "options": [
+                                "box",
+                                "diamond",
+                                "nanosheet"
+                            ],
+                            "isEditable": true
+                        }
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "400"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "400"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 7,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        {
+                            "key": "name",
+                            "val": "NMOS_INTERCONNECT",
+                            "type": 3,
+                            "isEditable": false
+                        },
+                        {
+                            "key": "layer",
+                            "val": "400",
+                            "type": 1,
+                            "isEditable": false
+                        },
+                        {
+                            "key": "color",
+                            "val": "#37FEFD",
+                            "type": 6,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "opacity",
+                            "val": 1,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "offset",
+                            "val": 8,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "height",
+                            "val": 6,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "shape",
+                            "val": "box",
+                            "type": 8,
+                            "options": [
+                                "box",
+                                "diamond",
+                                "nanosheet"
+                            ],
+                            "isEditable": true
+                        }
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "100"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "100"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 7,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        {
+                            "key": "name",
+                            "val": "NMOS_NANOSHEET",
+                            "type": 3,
+                            "isEditable": false
+                        },
+                        {
+                            "key": "layer",
+                            "val": "100",
+                            "type": 1,
+                            "isEditable": false
+                        },
+                        {
+                            "key": "color",
+                            "val": "#FF9966",
+                            "type": 6,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "opacity",
+                            "val": 1,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "offset",
+                            "val": 6,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "height",
+                            "val": 10,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "shape",
+                            "val": "diamond",
+                            "type": 8,
+                            "options": [
+                                "box",
+                                "diamond",
+                                "nanosheet"
+                            ],
+                            "isEditable": true
+                        }
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "305"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "305"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 7,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        {
+                            "key": "name",
+                            "val": "NMOS_GATE",
+                            "type": 3,
+                            "isEditable": false
+                        },
+                        {
+                            "key": "layer",
+                            "val": "305",
+                            "type": 1,
+                            "isEditable": false
+                        },
+                        {
+                            "key": "color",
+                            "val": "#30B0B0",
+                            "type": 6,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "opacity",
+                            "val": 1,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "offset",
+                            "val": 8,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "height",
+                            "val": 8,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "shape",
+                            "val": "box",
+                            "type": 8,
+                            "options": [
+                                "box",
+                                "diamond",
+                                "nanosheet"
+                            ],
+                            "isEditable": true
+                        }
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "307"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "307"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 7,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        {
+                            "key": "name",
+                            "val": "PMOS_GATE",
+                            "type": 3,
+                            "isEditable": false
+                        },
+                        {
+                            "key": "layer",
+                            "val": "307",
+                            "type": 1,
+                            "isEditable": false
+                        },
+                        {
+                            "key": "color",
+                            "val": "#46C773",
+                            "type": 6,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "opacity",
+                            "val": 1,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "offset",
+                            "val": 16,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "height",
+                            "val": 8,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "shape",
+                            "val": "box",
+                            "type": 8,
+                            "options": [
+                                "box",
+                                "diamond",
+                                "nanosheet"
+                            ],
+                            "isEditable": true
+                        }
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "350"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "350"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 7,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        {
+                            "key": "name",
+                            "val": "DIFFUSION_BREAK",
+                            "type": 3,
+                            "isEditable": false
+                        },
+                        {
+                            "key": "layer",
+                            "val": "350",
+                            "type": 1,
+                            "isEditable": false
+                        },
+                        {
+                            "key": "color",
+                            "val": "#FFD6D6",
+                            "type": 6,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "opacity",
+                            "val": 1,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "offset",
+                            "val": 14,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "height",
+                            "val": 4,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "shape",
+                            "val": "box",
+                            "type": 8,
+                            "options": [
+                                "box",
+                                "diamond",
+                                "nanosheet"
+                            ],
+                            "isEditable": true
+                        }
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "402"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "402"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 7,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        {
+                            "key": "name",
+                            "val": "PMOS_INTERCONNECT",
+                            "type": 3,
+                            "isEditable": false
+                        },
+                        {
+                            "key": "layer",
+                            "val": "402",
+                            "type": 1,
+                            "isEditable": false
+                        },
+                        {
+                            "key": "color",
+                            "val": "#61CB21",
+                            "type": 6,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "opacity",
+                            "val": 1,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "offset",
+                            "val": 16,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "height",
+                            "val": 6,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "shape",
+                            "val": "box",
+                            "type": 8,
+                            "options": [
+                                "box",
+                                "diamond",
+                                "nanosheet"
+                            ],
+                            "isEditable": true
+                        }
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "600"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "600"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 7,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        {
+                            "key": "name",
+                            "val": "VIA_FROM_PMOS_INTERCONNECT_TO_NMOS_INTERCONNECT",
+                            "type": 3,
+                            "isEditable": false
+                        },
+                        {
+                            "key": "layer",
+                            "val": "600",
+                            "type": 1,
+                            "isEditable": false
+                        },
+                        {
+                            "key": "color",
+                            "val": "#62FF00",
+                            "type": 6,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "opacity",
+                            "val": 1,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "offset",
+                            "val": 14,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "height",
+                            "val": 2,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "shape",
+                            "val": "box",
+                            "type": 8,
+                            "options": [
+                                "box",
+                                "diamond",
+                                "nanosheet"
+                            ],
+                            "isEditable": true
+                        }
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "103"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "103"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 7,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        {
+                            "key": "name",
+                            "val": "PMOS_NANOSHEET",
+                            "type": 3,
+                            "isEditable": false
+                        },
+                        {
+                            "key": "layer",
+                            "val": "103",
+                            "type": 1,
+                            "isEditable": false
+                        },
+                        {
+                            "key": "color",
+                            "val": "#444444",
+                            "type": 6,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "opacity",
+                            "val": 1,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "offset",
+                            "val": 14,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "height",
+                            "val": 10,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "shape",
+                            "val": "diamond",
+                            "type": 8,
+                            "options": [
+                                "box",
+                                "diamond",
+                                "nanosheet"
+                            ],
+                            "isEditable": true
+                        }
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "700"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "700"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 7,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        {
+                            "key": "name",
+                            "val": "VIA_FROM_M0_TO_PMOS_INTERCONNECT_VCT",
+                            "type": 3,
+                            "isEditable": false
+                        },
+                        {
+                            "key": "layer",
+                            "val": "700",
+                            "type": 1,
+                            "isEditable": false
+                        },
+                        {
+                            "key": "color",
+                            "val": "#FF0080",
+                            "type": 6,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "opacity",
+                            "val": 1,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "offset",
+                            "val": 22,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "height",
+                            "val": 10,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "shape",
+                            "val": "box",
+                            "type": 8,
+                            "options": [
+                                "box",
+                                "diamond",
+                                "nanosheet"
+                            ],
+                            "isEditable": true
+                        }
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "701"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "701"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 7,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        {
+                            "key": "name",
+                            "val": "VIA_FROM_M0_TO_PMOS_GATE_VG",
+                            "type": 3,
+                            "isEditable": false
+                        },
+                        {
+                            "key": "layer",
+                            "val": "701",
+                            "type": 1,
+                            "isEditable": false
+                        },
+                        {
+                            "key": "color",
+                            "val": "#FF00FF",
+                            "type": 6,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "opacity",
+                            "val": 1,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "offset",
+                            "val": 24,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "height",
+                            "val": 8,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "shape",
+                            "val": "box",
+                            "type": 8,
+                            "options": [
+                                "box",
+                                "diamond",
+                                "nanosheet"
+                            ],
+                            "isEditable": true
+                        }
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "702"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "702"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 7,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        {
+                            "key": "name",
+                            "val": "via_nm0",
+                            "type": 3,
+                            "isEditable": false
+                        },
+                        {
+                            "key": "layer",
+                            "val": "702",
+                            "type": 1,
+                            "isEditable": false
+                        },
+                        {
+                            "key": "color",
+                            "val": "#D133FF",
+                            "type": 6,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "opacity",
+                            "val": 1,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "offset",
+                            "val": 14,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "height",
+                            "val": 18,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "shape",
+                            "val": "box",
+                            "type": 8,
+                            "options": [
+                                "box",
+                                "diamond",
+                                "nanosheet"
+                            ],
+                            "isEditable": true
+                        }
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "703"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "703"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 7,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        {
+                            "key": "name",
+                            "val": "",
+                            "type": 3,
+                            "isEditable": false
+                        },
+                        {
+                            "key": "layer",
+                            "val": "703",
+                            "type": 1,
+                            "isEditable": false
+                        },
+                        {
+                            "key": "color",
+                            "val": "#8D0000",
+                            "type": 6,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "opacity",
+                            "val": 1,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "offset",
+                            "val": 16,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "height",
+                            "val": 16,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "shape",
+                            "val": "box",
+                            "type": 8,
+                            "options": [
+                                "box",
+                                "diamond",
+                                "nanosheet"
+                            ],
+                            "isEditable": true
+                        }
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "1000"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "1000"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 7,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        {
+                            "key": "name",
+                            "val": "M0",
+                            "type": 3,
+                            "isEditable": false
+                        },
+                        {
+                            "key": "layer",
+                            "val": "1000",
+                            "type": 1,
+                            "isEditable": false
+                        },
+                        {
+                            "key": "color",
+                            "val": "#F0FF69",
+                            "type": 6,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "opacity",
+                            "val": 1,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "offset",
+                            "val": 32,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "height",
+                            "val": 5,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "shape",
+                            "val": "box",
+                            "type": 8,
+                            "options": [
+                                "box",
+                                "diamond",
+                                "nanosheet"
+                            ],
+                            "isEditable": true
+                        }
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "10000"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "10000"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 7,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        {
+                            "key": "name",
+                            "val": "CELL_BOUNDARY",
+                            "type": 3,
+                            "isEditable": false
+                        },
+                        {
+                            "key": "layer",
+                            "val": "10000",
+                            "type": 1,
+                            "isEditable": false
+                        },
+                        {
+                            "key": "color",
+                            "val": "#EFEFEF",
+                            "type": 6,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "opacity",
+                            "val": 1,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "offset",
+                            "val": -5,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "height",
+                            "val": 5,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "shape",
+                            "val": "box",
+                            "type": 8,
+                            "options": [
+                                "box",
+                                "diamond",
+                                "nanosheet"
+                            ],
+                            "isEditable": true
+                        }
+                    ],
+                    "isSelected": false
+                },
+                {
+                    "supportsVariations": false,
+                    "uiVisible": true,
+                    "key": {
+                        "key1": "2000"
+                    },
+                    "keyDisplayName": {
+                        "displayNameKey1": "2000"
+                    },
+                    "unit": null,
+                    "description": null,
+                    "type": 7,
+                    "parameterHidingRule": null,
+                    "negativeStartAllowed": false,
+                    "negativeEndAllowed": false,
+                    "stepperFloat": false,
+                    "stepper": null,
+                    "defaultStartValue": null,
+                    "defaultEndValue": null,
+                    "minStart": null,
+                    "maxStart": null,
+                    "minEnd": null,
+                    "maxEnd": null,
+                    "startPercentage": null,
+                    "endPercentage": null,
+                    "options": null,
+                    "displayNameOptions": null,
+                    "optionsDescription": null,
+                    "val": [
+                        {
+                            "key": "name",
+                            "val": "ROUTING_TRACKS",
+                            "type": 3,
+                            "isEditable": false
+                        },
+                        {
+                            "key": "layer",
+                            "val": "2000",
+                            "type": 1,
+                            "isEditable": false
+                        },
+                        {
+                            "key": "color",
+                            "val": "#8F33FF",
+                            "type": 6,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "opacity",
+                            "val": 0,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "offset",
+                            "val": 10,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "height",
+                            "val": 10,
+                            "type": 1,
+                            "isEditable": true
+                        },
+                        {
+                            "key": "shape",
+                            "val": "box",
+                            "type": 8,
+                            "options": [
+                                "box",
+                                "diamond",
+                                "nanosheet"
+                            ],
+                            "isEditable": true
+                        }
+                    ],
+                    "isSelected": false
+                }
+            ]
+        },
+        {
+            "supportsVariations": false,
+            "uiVisible": true,
+            "parameterSupport": false,
+            "name": "permutation",
+            "displayName": "Permutation",
+            "header": null,
+            "data": [
+                {
+                    "name": "placer",
+                    "displayName": "Placer",
+                    "parameterName": "other",
+                    "attribute": "",
+                    "value": [
+                        "base0",
+                        "base1"
+                    ],
+                    "defaultValue": [
+                        "base0"
+                    ],
+                    "options": [
+                        "base0",
+                        "base1"
+                    ]
+                }
+            ]
+        },
+        {
+            "supportsVariations": false,
+            "uiVisible": false,
+            "parameterSupport": false,
+            "name": "display_names",
+            "displayName": "Display Names",
+            "header": null,
+            "data": []
+        }
+    ]
+}

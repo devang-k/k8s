@@ -1,0 +1,71 @@
+# This file is a template, and might need editing before it works on your project.
+# This is a sample GitLab CI/CD configuration file that should run without any modifications.
+# It demonstrates a basic 3 stage CI/CD pipeline. Instead of real tests or scripts,
+# it uses echo commands to simulate the pipeline execution.
+#
+# A pipeline is composed of independent jobs that run scripts, grouped into stages.
+# Stages run in sequential order, but jobs within stages run in parallel.
+#
+# For more information, see: https://docs.gitlab.com/ee/ci/yaml/index.html#stages
+#
+# You can copy and paste this template into a new `.gitlab-ci.yml` file.
+# You should not add this template to an existing `.gitlab-ci.yml` file by using the `include:` keyword.
+#
+# To contribute improvements to CI/CD templates, please follow the Development guide at:
+# https://docs.gitlab.com/ee/development/cicd/templates.html
+# This specific template is located at:
+# https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Getting-Started.gitlab-ci.yml
+
+stages:          # List of stages for jobs, and their order of execution
+  - build
+  - build-test
+  
+build-job:       # This job runs in the build stage, which runs first.
+  stage: build
+  only:
+   - main
+  before_script:
+    - mkdir ~/.ssh
+    - echo "$AWS_SECRET_KEY" > ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+  script:
+    
+    - echo "This is git writign to aws" >> index.html
+    - scp -o StrictHostKeyChecking=no index.html $AWS_USERNAME@$AWS_PUBLIC_IP:/home/ubuntu/
+    - ssh -tt $AWS_USERNAME@$AWS_PUBLIC_IP 'rm -rf /home/ubuntu/sivista/ && mkdir /home/ubuntu/sivista'
+    - scp -o StrictHostKeyChecking=no -r . $AWS_USERNAME@$AWS_PUBLIC_IP:/home/ubuntu/sivista
+    - ssh -tt $AWS_USERNAME@$AWS_PUBLIC_IP 'cd /home/ubuntu/sivista && ./install.sh'
+    - pwd
+    - echo "Compiling the code..."
+    - echo "Compile complete."
+  environment:
+    name: sandbox
+    url: https://xxxxxx.com
+  variables:
+    GIT_DEPTH: 0
+  when: manual
+  
+
+
+build-test:       # This job runs in the build stage, which runs first.
+  stage: build-test
+  before_script:
+    - mkdir ~/.ssh
+    - echo "$DEV_AWS_SECRET_KEY" > ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+  script:
+    
+    - echo "This is git writign to aws" >> index.html
+    - scp -o StrictHostKeyChecking=no index.html $DEV_AWS_USERNAME@$DEV_AWS_PUBLIC_IP:/home/ubuntu/
+    - ssh -tt $DEV_AWS_USERNAME@$DEV_AWS_PUBLIC_IP 'rm -rf /home/ubuntu/Desktop/sivista/ && mkdir /home/ubuntu/Desktop/sivista'
+    - scp -o StrictHostKeyChecking=no -r . $DEV_AWS_USERNAME@$DEV_AWS_PUBLIC_IP:/home/ubuntu/Desktop/sivista
+    - ssh -tt $DEV_AWS_USERNAME@$DEV_AWS_PUBLIC_IP 'cd /home/ubuntu/Desktop/sivista && ./install-test.sh'
+    - pwd
+    - echo "Compiling the code..."
+    - echo "Compile complete."
+  environment:
+    name: test
+    url: https://xxxxxx.com
+  variables:
+    GIT_DEPTH: 0
+  when: manual
