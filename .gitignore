@@ -1,101 +1,75 @@
-# Byte-compiled / optimized / DLL files
-*.py[cod]
-__pycache__/
-*.so
-
-# C extensions
-*.so
-
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-
-# Django stuff:
-*.log
-*.pot
+*.egg-info
 *.pyc
-*.pyo
-*.pyd
-*.db
-*.sqlite3
-
-# If your database is managed by the version control
-*.db-journal
-
-# Media files
-media/
-
-# Static files
-staticfiles/
-
-# Local environment settings
-# .env.*
-
-# venv
-myenv/
-venv/
-venv_new/
-ENV/
-env/
-.venv/
-.ENV/
-
-# VS Code settings
-.vscode/
-**/.vscode-server/**
-
-# macOS
-.DS_Store
-
-# PyCharm
-.idea/
-
-# mypy
-.mypy_cache/
-
-# Coverage reports
-htmlcov/
-.tox/
-.nox/
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-
-# Translations
-*.mo
-
-# Logs
+*/outputs/*
+*build*
+*dist*
+*.DS_Store
+stdcell_generation/generate_layout.py
+.vscode
+.log.csv
+.sivista_log
+.sivista_log*
+consolidated_f2f_metrics.*
+AND2X1*
+AND2X2*
+AOI21X1*
+AOI22X1*
+BUFX2*
+BUFX4*
+CLKBUF1*
+CLKBUF2*
+CLKBUF3*
+DFFNEGX1*
+DFFPOSX1*
+DFFSR*
+FAX1*
+FAX1_1*
+HAX1*
+INVX1*
+INVX2*
+INVX4*
+INVX8*
+INVD4*
+INVX4_CFET_NEW*
+INVX4_CFET*
+LATCH*
+MUX2X1*
+MUX21X1*
+NAND2X1*
+NAND3X1*
+NOR2X1*
+NOR3X1*
+OAI21X1*
+OAI22X1*
+OR2X1*
+OR2X2*
+TBUFX1*
+TBUFX2*
+XNOR2X1*
+XOR2X1*
+ICGX1*
+OA333X2*
+OA333X1*
+DFFHQX4*
+DFFLQX4*
+CELL30*
+SDFLX1*
+ASYNC_DFFHX1*
+SDFHX1*
+TBUFX36*
+FULL_ADDER_RCA_1_BIT*
+SR_LATCH*
+OAI40X1*
+JK_FF_42TRANSISTORS*
+prodEnv/
+*.user
+*.type
+*.name
+*.runName
+*.history
+*.0
 *.log
-logs/
-
-# Celery stuff
-celerybeat-schedule
-celerybeat.pid
-
-# Sphinx documentation
-docs/_build/
-
-# pytest
-.pytest_cache/
-
-# local changes
-local_settings.py
-
-# local storage
-sivista_be_data/
+*.png
+/mlruns
+SivistaDevRoot*
+**/__pycache__/**
