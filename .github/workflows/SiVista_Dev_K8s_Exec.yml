@@ -24,10 +24,7 @@ jobs:
       CONTAINER_NAME: sivistaML
       ENABLE_ELASTIC_LOGGING: false
 
- 
-    outputs:
-      version: ${{ steps.extract_version.outputs.version }}
- 
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -36,18 +33,18 @@ jobs:
         run: |
           VENV_DIR="../sivista_core_venv"
           if [ -d "$VENV_DIR" ]; then
-          echo "Virtual environment found in '$VENV_DIR'. Activating..."
+            echo "Virtual environment found in '$VENV_DIR'. Activating..."
           else
-          echo "Virtual environment not found. Creating one in '$VENV_DIR'..."
-          python3 -m venv "$VENV_DIR"
-          if [ $? -eq 0 ]; then
-          echo "Virtual environment created successfully."
-          else
-          echo "Failed to create virtual environment. Exiting."
-          exit 1
+            echo "Virtual environment not found. Creating one in '$VENV_DIR'..."
+            python3 -m venv "$VENV_DIR"
+            if [ $? -eq 0 ]; then
+              echo "Virtual environment created successfully."
+            else
+              echo "Failed to create virtual environment. Exiting."
+              exit 1
+            fi
           fi
-          fi
-          
+
           # Source the virtual environment
           if [ -f "$VENV_DIR/bin/activate" ]; then
             source "$VENV_DIR/bin/activate"
@@ -56,7 +53,7 @@ jobs:
             echo "Failed to activate virtual environment. Ensure Python3 and venv module are installed."
             exit 1
           fi
-          
+
           # install dependencies
           pip install -r requirements.txt
 
@@ -72,7 +69,7 @@ jobs:
           version=$(grep 'VERSION=' version.conf | cut -d '"' -f 2)
           echo "Version is: $version"
           echo "version=$version" >> $GITHUB_OUTPUT
-          
+
       - name: Log Push Details
         run: |
           echo "Push event to branch: ${{ github.ref_name }}"
@@ -91,11 +88,11 @@ jobs:
           IMAGE_NAME="ghcr.io/${REPO_NAME}/sivista_ml_sprint4"
           echo "REPO_NAME=$REPO_NAME" >> $GITHUB_ENV
           echo "IMAGE_NAME=$IMAGE_NAME" >> $GITHUB_ENV
- 
+
       - name: Build Docker Image
         run: |
           docker build --no-cache --progress=plain \
-            -t siclarity/sivista_ml_sprint4:${{ steps.extract_version.outputs.version }} \
+            -t $IMAGE_NAME:${{ steps.extract_version.outputs.version }} \
             -f Dockerfile.ex_pkg \
             --build-arg SHARED_MEMORY=${{ env.SHARED_MEMORY }} \
             --build-arg THIRD_PARTY_GRPC=${{ env.THIRD_PARTY_GRPC }} \
@@ -105,11 +102,12 @@ jobs:
             --build-arg AWS_SECRET_ACCESS_KEY_DEV="${{ env.AWS_SECRET_ACCESS_KEY_DEV }}" \
             --build-arg AWS_STORAGE_BUCKET_NAME_DEV="${{ env.AWS_STORAGE_BUCKET_NAME_DEV }}" \
             --build-arg AWS_S3_REGION_NAME_DEV="${{ env.AWS_S3_REGION_NAME_DEV }}" \
-            --build-arg STORAGE_TYPE="${{ secrets.STORAGE_TYPE }}" \
+            --build-arg STORAGE_TYPE="${{ env.STORAGE_TYPE }}" \
             --build-arg ENABLE_ELASTIC_LOGGING="${{ env.ENABLE_ELASTIC_LOGGING }}" .
 
       - name: Push Docker Image
         run: |
           docker push $IMAGE_NAME:${{ steps.extract_version.outputs.version }}
+
     outputs:
       version: ${{ steps.extract_version.outputs.version }}
