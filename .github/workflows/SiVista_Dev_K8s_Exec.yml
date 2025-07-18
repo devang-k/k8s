@@ -1,7 +1,6 @@
 name: SiVista_Dev_k8s_exec_deploy
  
 on:
-  workflow_dispatch:
   push:
     branches:
       - main-ml
