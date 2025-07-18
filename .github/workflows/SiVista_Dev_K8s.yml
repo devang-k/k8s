@@ -1,15 +1,14 @@
 name: SiVista_Dev_k8s_deploy
 
 on:
-  push:
-    branches:
-      - main-ml
+  workflow_dispatch:
 
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
 
     env:
+      CI: True    
       PORT: 50051
       ML_ENV: .env.dev
       AWS_ACCESS_KEY_ID_DEV: ${{ secrets.AWS_ACCESS_KEY_ID_DEV }}
