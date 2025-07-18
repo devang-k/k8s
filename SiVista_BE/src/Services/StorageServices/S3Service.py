@@ -315,7 +315,7 @@ class S3Service(BaseService):
                             # Attempt to decrypt to validate the file
                             decrypted_content = decrypt_file_content(raw_content)  # We're not using the result, just validating
                         except InvalidToken:
-                            message = "Selected tech file is not valid. Please select a valid tech file."
+                            message = "Selected file is not valid. Please select a valid file."
                             data1 = None
                             status_code = status.HTTP_400_BAD_REQUEST
                             response_status = False
@@ -349,8 +349,10 @@ class S3Service(BaseService):
     
             elif ftype == 'Netlist':
                 try:
-                    for obj in bucket.objects.filter(Prefix=filepath):
-                        body = obj.get()['Body'].read()
+                    
+                    # Attempt to access the object directly
+                    obj = bucket.Object(filepath)
+                    body = obj.get()['Body'].read()
     
                     if decrypt:
                         try:
@@ -358,7 +360,7 @@ class S3Service(BaseService):
                             filecontent = decrypt_file_content(body)  # We're not using the result, just validating
                             filecontent = b64encode(filecontent.encode('utf-8')).decode('utf-8')
                         except InvalidToken:
-                            message = "Selected tech file is not valid. Please select a valid tech file."
+                            message = "Selected file is not valid. Please select a valid file."
                             data1 = None
                             status_code = status.HTTP_400_BAD_REQUEST
                             response_status = False

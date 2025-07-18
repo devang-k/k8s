@@ -2,10 +2,10 @@
 *.py[cod]
 __pycache__/
 *.so
-node_modules
+
 # C extensions
 *.so
-dev-secret.yaml
+
 # Distribution / packaging
 .Python
 build/

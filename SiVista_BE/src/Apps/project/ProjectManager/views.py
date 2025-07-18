@@ -666,7 +666,7 @@ class ListTechFileCatalog(APIView):
             project= Project.objects.filter(id=project_id).first()
             if not project:
                 response = JsonResponse(vars(TechFileCatalogResponse(
-                    "Project not found.",
+                    "Catalog file not found.",
                     status.HTTP_400_BAD_REQUEST,
                     False
                 )))
@@ -701,7 +701,7 @@ class ListTechFileCatalog(APIView):
             else:
                 # Fetch the project
                 response = JsonResponse(vars(TechFileCatalogResponse(
-                    "Project not found.",
+                    "Catalog file not found.",
                     status.HTTP_400_BAD_REQUEST,
                     False
                 )))
@@ -1284,8 +1284,7 @@ class DeleteCatalogTechFile(APIView):
                 response.status_code = status.HTTP_401_UNAUTHORIZED
                 return response
             techCatalogProject.delete()
-            techCatalogProject.save()
-            response = JsonResponse(vars(ProjectResponse("Project deleted successfully.",status.HTTP_200_OK,True)))
+            response = JsonResponse(vars(ProjectResponse("Catalog file deleted successfully.",status.HTTP_200_OK,True)))
             response.status_code = status.HTTP_200_OK
             return response
         except Exception as e:

@@ -18,10 +18,13 @@ spec:
         - name: ghcr-secret
       containers:
         - name: sivista-backend
-          image: ghcr.io/devang-k/k8s/sivista_backend_sprint4:1.0.0.370
+          image: "ghcr.io/devang-k/k8s/sivista_backend_sprint4:${VERSION}"
           imagePullPolicy: Always
           ports:
             - containerPort: 8000
+          env:
+            - name: VERSION
+              value: "${VERSION}"
           resources:
             limits:
               cpu: "1000m"

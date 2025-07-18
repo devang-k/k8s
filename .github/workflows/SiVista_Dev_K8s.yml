@@ -13,12 +13,13 @@ jobs:
       CI: true
       PORT: 8000
       DJANGO_ENV: .env.dev
-      DBNAME_DEV: SiClarity_Migration
+      DBNAME_DEV: SiClarity_k8s
       USERNAME_DEV: SiClarity
       PASSWORD_DEV: Sivista_01
       AWS_ACCESS_KEY_ID_DEV: ${{ secrets.AWS_ACCESS_KEY_ID_DEV }}
       AWS_SECRET_ACCESS_KEY_DEV: ${{ secrets.AWS_SECRET_ACCESS_KEY_DEV }}
-      AWS_STORAGE_BUCKET_NAME_DEV: sivista-dev-sprint-storage
+      AWS_STORAGE_BUCKET_NAME_DEV: sivista-dev-k8s-storage
+      AWS_S3_CUSTOM_DOMAIN_DEV: sivista-dev-k8s-storage.s3.amazonaws.com
       IMAGE_NAME: siclarity/sivista_backend_sprint4
       CONTAINER_NAME: sivistaBE_Sprint4
       GRPC_CHANNEL_DEV: 13.126.133.62:6602
@@ -67,6 +68,7 @@ jobs:
             --build-arg AWS_ACCESS_KEY_ID_DEV=${{ env.AWS_ACCESS_KEY_ID_DEV }} \
             --build-arg AWS_SECRET_ACCESS_KEY_DEV=${{ env.AWS_SECRET_ACCESS_KEY_DEV }} \
             --build-arg AWS_STORAGE_BUCKET_NAME_DEV=${{ env.AWS_STORAGE_BUCKET_NAME_DEV }} \
+            --build-arg AWS_S3_CUSTOM_DOMAIN_DEV=${{ env.AWS_S3_CUSTOM_DOMAIN_DEV }} \
             --build-arg IMAGE_NAME=${{ env.IMAGE_NAME }} \
             --build-arg CONTAINER_NAME=${{ env.CONTAINER_NAME }} \
             --build-arg GRPC_CHANNEL_DEV=${{ env.GRPC_CHANNEL_DEV }} \
@@ -78,3 +80,27 @@ jobs:
       - name: Push Docker Image
         run: |
           docker push $IMAGE_NAME:${{ steps.extract_version.outputs.version }}
+    outputs:
+      version: ${{ steps.extract_version.outputs.version }}
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build-and-push
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: Set up kubectl
+        uses: azure/setup-kubectl@v3
+        with:
+          version: 'v1.21.0'
+      - name: Set up Kubeconfig
+        run: |
+          mkdir -p $HOME/.kube
+          echo "${{ secrets.KUBE_CONFIG }}" > $HOME/.kube/config
+      - name: Check network connectivity to K8s API Server
+        run: nc -zv 13.203.185.95 6443
+      - name: Deploy to Kubernetes
+        run: |
+          export VERSION="${{ needs.build-and-push.outputs.version }}"
+          envsubst < k8s/deployment.yaml | kubectl apply -f -
+          kubectl apply -f k8s/service.yaml
+

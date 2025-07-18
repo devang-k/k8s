@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION="1.0.0.370"
+VERSION="1.0.0.372"
 
 IMAGE_NAME="siclarity/sivista_backend"
 
