@@ -1,9 +1,8 @@
 name: SiVista_Dev_k8s_exec_deploy
- 
+
 on:
-  push:
-    branches:
-      - main-ml
+  workflow_dispatch:
+
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
