@@ -1,7 +1,5 @@
 FROM ubuntu:24.04
 
-FROM ubuntu:24.04
-
 # Build arguments
 ARG DJANGO_ENV
 ARG PORT
